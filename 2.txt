@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Da</title>
+</head>
+<body>
+        <h1> <big> <pre>                Kenariy</pre>                       </big> </h1>
+    <p contenteditable title="Chtobi ti sprosil"> <pre>                       <img src="https://github.com/VostokSOS-Frontend/natsu/blob/master/img/ttgl.jpg?raw=true" width="289" height="355" alt="qq"> <br> Уот &#169; так уот &LT; </pre>
+    </p>
+     <ul>
+            <li> <a href="test_page_b.html"> Никита</a> </li>
+            <li> <a href="takashi.html"> Вова</a> </li>
+            <li> <a href="Daniili.html"> Даниил</a></li>
+     </ul>
+     <li>
+        <ol type="a">
+            <li>элемент нумерованного списка</li>
+            <li>элемент нумерованного списка</li>
+          </ol>
+        
+          <ul type="square">
+            <li>элемент маркированного списка</li>
+          </ul>
+          <a> <p>dsfscfscfs</p> </a>
+          <dl>
+              <dt>dsgsdf</dt>
+              <dd>sdfvdsf</dd>
+          </dl>
+<pre>            sdzv
+              sdvsd
+            sdvdsv                  cxcx     xc cx          </pre>
+
+            <h2 style="svoistvo1:znachenie1;
+            sv2:zn2;
+            color:darkgoldenrod; background-color: deeppink; font-size:20pt; text-align: right; border:4px solid black; padding: 5px; margin: 18px; font-family:'Times New Roman', Times, monospace; font-style: italic; font-weight:600; font-variant: initial; line-height: 2em; font:; border">
+        dfgvdfvfdb <br> sdvdf
+            </h2>
+</html>
