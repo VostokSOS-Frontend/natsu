@@ -17,6 +17,16 @@ body {
 	color: #49FF1A;
 	font-size: 48px;
 }
+A:visited {
+	color:#FF0;
+}
+A:active {
+	color:#FA0
+}
+
+A {
+	color:#0F0;
+}
 
 .button {
 	text-shadow: red 1.5px -1.5px 0;
@@ -30,5 +40,14 @@ img {
 	height: 29%;
 	border: 10px;
 	border-style: ridge;
-	color: #000;
+	border-color: #AAA;
+}
+
+.def {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.imgadd {
+	height:15%;
 }
