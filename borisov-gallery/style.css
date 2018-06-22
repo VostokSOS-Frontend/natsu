@@ -33,6 +33,10 @@ A[target="_blank"]{
 	color: black;
 }
 
+.class.class1{
+	color: red;
+}
+
 A[href^="http"]{
 	background-color: black;
 }
