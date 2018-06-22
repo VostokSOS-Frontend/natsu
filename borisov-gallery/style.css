@@ -1,0 +1,27 @@
+h1 {
+	font-size: 132px;
+	font-family: Georgia;
+	color: #79FF6A;
+	text-align: center;
+
+    	margin-top: 24px;
+	text-shadow: #000 0 0 30px;
+}
+
+table {
+	width: 100%;
+}
+
+body {
+	text-shadow: #000 0 0 5px;
+	color: #FF9F00;
+	font-size: 36px;
+}
+
+.button {
+	text-shadow: red 1.5px -1.5px 0;
+	color: Orange;
+	background: #000;
+	padding: 2px;
+	width: 15%;
+}
