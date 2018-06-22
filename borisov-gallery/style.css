@@ -28,6 +28,15 @@ A {
 	color:#0F0;
 }
 
+A[target="_blank"]{
+	Background-color:#lime;
+	color: black;
+}
+
+A[href^="http"]{
+	background-color: black;
+}
+
 .button {
 	text-shadow: red 1.5px -1.5px 0;
 	color: Orange;
