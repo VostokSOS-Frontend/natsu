@@ -1,0 +1,36 @@
+p, h1 {color: rgb(165, 95, 4); font-size: 3rem }
+pre {color: blue; text-align: right}
+li {color: chartreuse}
+#ty123 {color: forestgreen}
+
+.main {color: tomato}
+h1:hover {font-size: 1rem}
+li:active {color: cadetblue}
+a[:target="_blank"] {
+
+}
+a:visited:hover {color: darkgreen }
+::first-letter {color: red; font-style: italic}
+::selection {color: silver; font-style: italic;}
+
+img[alt|="Image"] { color: bisque
+
+}
+
+a[:target][href="http"][tittle$="link"] { 
+
+}
+
+.class1.class2.class3 - применит для тех, у кого все 3 этих класса {
+
+}
+div h1 {color: skyblue}
+body div>p em {color: violet}
+ol>li {color: yellow}
+ol li {color: slateblue}
+u>li {color: rosybrown}
+li ol li {color: red}
+
+div.picture-1 {width: 500px; background-image: url(https://github.com/VostokSOS-Frontend/natsu/blob/master/Kennadiy/img/Ponziani.jpg?raw=true)
+}
+.picture-1:hover {background-image: url(img/faviconn.ico); width: 500;}
