@@ -1,0 +1,30 @@
+.strelka  {
+    overflow:hidden;
+    width: 380px;
+    height:250px;
+    }
+
+    .strelka img {
+        -moz-transition: all 1s ease-out;
+        -o-transition: all 1s ease-out;
+        -webkit-transition: all 1s ease-out;
+        }
+        
+       .strelka img:hover{
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+        }   
+        
+        .size {
+            position: absolute;
+            top: 380px;
+            right: 0;
+        }
+
+        .size2  {
+                position: absolute;
+                top: 380px;
+                left: 0;
+            }
+        
