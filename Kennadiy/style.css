@@ -6,11 +6,25 @@ div.levo {background-image: url(img/left.png);
         background-image: url(https://cdn1.iconfinder.com/data/icons/scalable-blue-ui-icons/200/arrow-left-512.png);
     }
 
-div.pravo {background-image: url(img/right.png);
-    color: crimson;    }
-
 .pravo:hover{ 
         background-image: url(https://cdn1.iconfinder.com/data/icons/scalable-blue-ui-icons/200/arrow-right-512.png);
+        background-size: contain;
+    display: inline-block;
+    text-indent: -9999rem;
+    width: 50px;
+    height: 50px;    
     }
 
 a:visited:hover {color: darkgreen }
+
+.pravo {
+    background-image: url(sprava.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.pravo {
+    width: 256px;
+    height: 256px;
+    background-position: -5px -5px;
+}
