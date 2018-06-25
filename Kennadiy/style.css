@@ -3,14 +3,14 @@ div.levo {background-image: url(img/left.png);
     height: 200px;
     }
 .levo:hover{
-        background-image: url(https://www.iconfinder.com/icons/1518241/arrow_arrows_direction_left_navigation_right_icon);
+        background-image: url(https://cdn1.iconfinder.com/data/icons/scalable-blue-ui-icons/200/arrow-left-512.png);
     }
 
 div.pravo {background-image: url(img/right.png);
     color: crimson;    }
 
 .pravo:hover{ 
-        background-image: url(https://www.iconfinder.com/icons/1518262/arrow_arrows_direction_next_right_icon);
+        background-image: url(https://cdn1.iconfinder.com/data/icons/scalable-blue-ui-icons/200/arrow-right-512.png);
     }
 
 a:visited:hover {color: darkgreen }
