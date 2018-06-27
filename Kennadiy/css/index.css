@@ -33,8 +33,9 @@ h1 {text-align: center;
 
 
 body {background: linear-gradient(to right top, yellow, white);
+    min-height: 100%
 }
 
-
+html {min-height: 100%}
 
 figcaption a:visited:hover {color: darkgreen; }

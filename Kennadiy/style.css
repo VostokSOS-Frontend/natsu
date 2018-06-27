@@ -1,0 +1,26 @@
+/*.dragneel {background-color: red;}*/
+
+.avaj {background-color: purple;}
+
+.bugs {background: springgreen;}
+
+thead {background-color: silver}
+
+.colonna {background-color: orange}
+
+.border {border-collapse: collapse;}
+.border td {border: 2px solid black;}
+.border th {border: 2px solid black;
+/*border-spacing: ;*/
+border-color: black}
+
+
+* {color: black};
+
+p {color: brown;}
+
+#para-1 {color: aqua}
+
+.tekst {color: darkmagenta}
+
+[title] {color: peru}

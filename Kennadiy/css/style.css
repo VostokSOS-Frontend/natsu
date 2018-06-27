@@ -43,11 +43,13 @@ body {background: linear-gradient(to right top, rgb(60, 107, 160), rgb(252, 245,
 .konechniy_pic {
     display: block;
   margin: 0 auto;
-    max-width: 100%;}
+}
 
-.back {text-align: center;}
+.back {text-align: center;
+       font-size: 1.2rem}
 
-.on_main {text-align: center;}
+.on_main {text-align: center;
+          font-size: 1.2rem;}
 
 
 .buttonr {
