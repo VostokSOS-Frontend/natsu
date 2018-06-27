@@ -1,13 +1,13 @@
 .strelka  {
     overflow:hidden;
-    width: 380px;
-    height:250px;
+    width: 710px;
+    height: 710px;
     }
 
     .strelka img {
-        -moz-transition: all 1s ease-out;
-        -o-transition: all 1s ease-out;
-        -webkit-transition: all 1s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        -webkit-transition: all 0.5s ease-out;
         }
         
        .strelka img:hover{
@@ -26,5 +26,22 @@
                 position: absolute;
                 top: 380px;
                 left: 0;
-            }
-        
+        }
+
+   .albedotop {
+    background-image: url(albedotop2.png);
+    background-position: 25% 10%;
+
+    position:absolute;
+        top: 230px;
+        left: 100px;
+        width: 330px;
+        height: 480px;
+   }     
+
+   .albedotop:hover{
+    background-image: url(albedotop2.png);
+    background-position: 85% 30%;
+
+
+   }
