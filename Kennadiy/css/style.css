@@ -75,6 +75,7 @@ body {background: linear-gradient(to right top, rgb(60, 107, 160), rgb(252, 245,
     margin: 0;
     position: relative;
     transition: all ease 1s;
+    text-decoration: none;
   }
    
   .shadow {
@@ -160,3 +161,4 @@ body {background: linear-gradient(to right top, rgb(60, 107, 160), rgb(252, 245,
   .buttonl:hover .shadow span {
     opacity: 1;
   }
+
