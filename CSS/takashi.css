@@ -1,0 +1,104 @@
+body {
+    background: url(../img/fon.jpg);
+}
+
+.avatarka {
+    position: absolute;
+    left: 7%;
+    top: 10%;
+}
+
+
+.text {
+    font-family: 'Wendy One', sans-serif;
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: yellow;
+    font-size: 4rem;
+    text-shadow: 3px 3px black;
+}
+
+.contakts {
+    font-family: 'Wendy One', sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    color: yellow;
+    font-size: 3rem;
+    text-shadow: 3px 3px black;
+}
+
+.projects {
+    font-family: 'Wendy One', sans-serif;
+    position: absolute;
+    top: 55%;
+    left: 7%;
+    font-size: 3rem;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+a {
+    color: yellow;
+}
+
+a:visited {
+    color: red;
+}
+
+div > img {
+    border: 0.25rem solid black;
+}
+
+.party {
+    font-family: 'Wendy One', sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 41.5%;
+    font-size: 4rem;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+.kenvald {
+    position: absolute;
+    top: 140%;
+    left: 7%;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 4rem;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+.danil {
+    position: absolute;
+    top: 140%;
+    right: 7%;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 4rem;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+.salo {
+    position: absolute;
+    top: 140%;
+    left: 41.5%;
+    font-family: 'Wendy One', sans-serif;
+    font-size: 4rem;
+    color: yellow;
+    text-shadow: 3px 3px black;
+}
+
+.polosa {
+    position: absolute;
+    top: 85%;
+    left: 0%
+}
+
+.iakor {
+    position: absolute;
+    top: 210%;
+    right: 9%;
+}
