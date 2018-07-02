@@ -70,3 +70,7 @@ text-shadow: 1px 1px 2px black, 3px -3px 0px blue, -3px 3px 0px yellow;)
 font-family: 'Raleway', sans-serif;
 .tekst {font-family: 'Shrikhand', cursive !important;
         }
+
+
+
+* {cursor: url('C:/Users/User/example/natsu/css/empire/Help.cur'), auto;}
