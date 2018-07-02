@@ -1,0 +1,37 @@
+body {background: linear-gradient(to left top, rgba(229, 162, 162, 0.911),white);
+}
+
+h1 {text-align: center;
+   font-weight: bolder;
+   font-size: 3rem;
+}
+
+figure {
+  text-align: center;
+}
+
+#p1 {text-align: center; 
+    font-style: italic;
+}
+
+.border td {border: 2px solid black;}
+.border th {border: 2px solid black;
+            border-color: black;
+}
+
+.border {border-collapse: collapse;
+        border: inherit;
+        border-style: dashed;
+        color: initial;
+}
+
+.caption {font-family: 'Shrikhand', cursive;
+            text-shadow: 1px 1px 2px black, 3px -3px 0px blue, -3px 3px 0px yellow;
+}
+.dragneel {background: crimson;}
+.bugs {background: springgreen;}
+.avaj {background: ghostwhite;}
+.last_row {background: rgb(230, 50, 230);}
+.thead {background: turquoise}
+.pici {text-align: center;}
+.pici a {margin-left: 50px;}
