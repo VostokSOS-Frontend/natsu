@@ -44,7 +44,9 @@ body {border: palevioletred;}
 .border {border-collapse: collapse;
     border: inherit;
     border-style: dashed;
-    color: initial;}
+    color: initial;
+    direction: rtl;
+    /*quotes: ;*/}
 
 
 .abzac {background-color: gold;
@@ -64,13 +66,48 @@ body {border: palevioletred;}
   }
 
 .caption {font-family: 'Shrikhand', cursive;
-text-shadow: 1px 1px 2px black, 3px -3px 0px blue, -3px 3px 0px yellow;)
+text-shadow: 1px 1px 2px black, 3px -3px 0px blue, -3px 3px 0px yellow;
 }
-  font-family: 'Shrikhand', cursive;
-font-family: 'Raleway', sans-serif;
+/*  font-family: 'Shrikhand', cursive;
+font-family: 'Raleway', sans-serif; */
 .tekst {font-family: 'Shrikhand', cursive !important;
         }
 
+.text {border-radius: 10% 20%/50% 45% 28%;
+      background-color: blue;
+      display: inline-block;
+      padding: 10px 10px 12px 8px;
+      width: 100px;
+      height: 100px;}
 
+.yo {direction: rtl;}
 
 * {cursor: url('C:/Users/User/example/natsu/css/empire/Help.cur'), auto;}
+
+.menuitem {}
+
+.picture-1 {}
+
+.gogo {position: absolute;
+background-color: blue;
+width: 200px;
+height: 200px;
+top: 0px;
+left: 0px;
+z-index: 50;}
+
+.gogogo {width: 200px;
+         height: 200px;
+         background-color: red;
+         position: absolute;
+         top: 50px;
+         left: 50px;
+         z-index: 100;}
+
+.block3 {position: absolute;
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: 100px;
+        z-index: 150;}
