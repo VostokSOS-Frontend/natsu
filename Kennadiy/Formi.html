@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Reg</title>
+</head>
+<body>
+    <form action="index.html" method="GET">
+
+<p>    Form <br>
+Login: <input autocomplete="on" autofocus type="text" name="login" maxlength="9" placeholder="log" required> Не более 9 символов <br>
+Password: <input type="password" name="password" minlength="6" size="40"> Минимум 6 символов<br>
+Birthdate: Time:<input type="time"> Day:<input type="number" min="1" max="31" value="day">  
+Month:<select disabled type="text" name="month">
+    <option selected>Yan</option>
+    <option>Fev</option>
+    <option>Mart</option> </select>
+    Year:<input type="number" min="1900" max="2000" name="year" required> <br> <br> <br> <br>
+
+Country of origin:<select name="country">
+    <optgroup label="Europe">
+        <option value="Poland">q</option>
+        <option value="Switzerland">w</option>
+        <option value="Denmark"></option>
+        <option value="Germany"></option>
+        <option value="France"></option>
+    </optgroup>
+</select>
+
+Bio 2.0:<select multiple name="interesi" size="1">
+    <optgroup label="Qwer">
+        <option value="">df</option>
+        <option value="">dfb</option>
+        <option value="">dfvd</option>
+        <option value=""></option>
+        <option value="">sds</option>
+
+    </optgroup>
+</select>
+
+
+Sex: <input tabindex="2" type="radio" name="gender" value="male" checked> M <input name="gender" type="radio" value="female"> W
+    
+<pre>       Pet
+<label><input type="checkbox" name="" value="cat" name="cat"> Cat</label>        <label>                 <input type="checkbox" value="hamster" name="hamster"> Hamster<br></label>
+<input type="checkbox" value="dog" name="dog"> Dog                         <input type="checkbox" value="spider" name="spider"> Spider<br>
+<input type="checkbox" value="turtle" name="turtle"> Turtle                      <input type="checkbox" value="horse" name="Horse">Horse</pre> <br>
+Avatar: <input type="file"> <br> <br> <br>
+Bio: <textarea accesskey="x" maxlength="666" name="bio">Максимум 666 символов</textarea> <br> <br>
+<input type="submit"> <input type="reset" value="kuliti">
+<!-- Атрибуты read-only, autocomplete, filled-set!, legend!, acceskey и disabled-->
+</p>
+</form>
+
+<input type="text" form="name">
+
+
+</body>
+</html>
