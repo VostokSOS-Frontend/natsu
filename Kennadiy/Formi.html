@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="formi.css">
     <title> Reg</title>
 </head>
 <body>
@@ -47,8 +48,18 @@ Sex: <input tabindex="2" type="radio" name="gender" value="male" checked> M <inp
 <input type="checkbox" value="turtle" name="turtle"> Turtle                      <input type="checkbox" value="horse" name="Horse">Horse</pre> <br>
 Avatar: <input type="file"> <br> <br> <br>
 Bio: <textarea accesskey="x" maxlength="666" name="bio">Максимум 666 символов</textarea> <br> <br>
-<input type="submit"> <input type="reset" value="kuliti">
+<input type="submit"> <input type="reset" value="kuliti"> <br> <br>
 <!-- Атрибуты read-only, autocomplete, filled-set!, legend!, acceskey и disabled-->
+CVV: <input type="number" min="111" max="999" name="cvv" required> 
+<div class="voprosik"> ? 
+
+    <div class="vspliv"> Очень обязательно </div>
+</div>
+<br> <br> <br> <br>
+<label class="container">
+    <input type="checkbox">
+    <div class="custom-mark"></div>
+</label>
 </p>
 </form>
 
