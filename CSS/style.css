@@ -21,6 +21,19 @@ a[:target][href="http"][tittle$="link"] {
 
 }
 
+
+
+a[href^="http"]:after {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+    background-image: url('https://cdn0.iconfinder.com/data/icons/octicons/1024/link-external-16.png'); /* Comment - ctrl + / */
+}
+fvge
+
 .class1.class2.class3 - применит для тех, у кого все 3 этих класса {
 
 }
@@ -34,3 +47,6 @@ li ol li {color: red}
 div.picture-1 {width: 500px; background-image: url(https://github.com/VostokSOS-Frontend/natsu/blob/master/Kennadiy/img/Ponziani.jpg?raw=true)
 }
 .picture-1:hover {background-image: url(img/faviconn.ico); width: 500;}
+
+.mainmenu .menu {display: none;}
+.menuitem:hover > .menu {display: block}

@@ -1,0 +1,164 @@
+.levo {background-image: url(img/left.png);
+    width: 50px;
+    height: 50px;
+    left: 100px;
+    }
+.levo:hover{
+        background-image: url(https://cdn1.iconfinder.com/data/icons/scalable-blue-ui-icons/200/arrow-left-512.png); background-size: contain;
+        display: inline-block;
+        text-indent: -9999rem;
+        width: 50px;
+        height: 50px;
+    }
+
+.pravo:hover{ 
+        background-image: url(https://cdn1.iconfinder.com/data/icons/scalable-blue-ui-icons/200/arrow-right-512.png);
+        background-size: contain;
+    display: inline-block;
+    text-indent: -9999rem;
+    width: 50px;
+    height: 50px;
+    right: 170px;    
+    }
+
+a:visited:hover {color: darkgreen }
+
+.pravo {
+    background-image: url(sprava.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.pravo {
+   
+    background-position: -5px -5px;
+}
+
+h1 {text-align: center;}
+
+p {font-size: 18px;}
+
+body {background: linear-gradient(to right top, rgb(60, 107, 160), rgb(252, 245, 245) )}
+
+.konechniy_pic {
+    display: block;
+  margin: 0 auto;
+}
+
+.back {text-align: center;
+       font-size: 1.2rem}
+
+.on_main {text-align: center;
+          font-size: 1.2rem;}
+
+
+.buttonr {
+    font-family: sans-serif;
+    margin: 30px;
+    background: #ee6123;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    bottom: 500px;
+    left: 1000px;
+  }
+   
+  .buttonr p {
+    margin: 0;
+    position: relative;
+    transition: all ease 1s;
+    text-decoration: none;
+  }
+   
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 0;
+    background: #205081;
+    overflow:hidden;
+    transition: all ease 2s;
+    border-radius: 5px;
+  }
+   
+  .shadow span {
+    opacity:0;
+    transition: all ease 3s;
+  }
+   
+  .buttonr:hover .shadow {
+    width: 100%;
+  }
+   
+  .buttonr:hover p {
+    opacity: 0;
+  }
+   
+  .buttonr:hover .shadow span {
+    opacity: 1;
+  }
+
+
+  .buttonl {
+    font-family: sans-serif;
+    margin: 30px;
+    background: #ee6123;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 40px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    bottom: 570px;
+    left: 10px;
+  }
+   
+  .buttonl p {
+    margin: 0;
+    position: relative;
+    transition: all ease 1s;
+  }
+   
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 40px;
+    width: 0;
+    background: #205081;
+    overflow:hidden;
+    transition: all ease 2s;
+    border-radius: 5px;
+  }
+   
+  .shadow span {
+    opacity:0;
+    transition: all ease 3s;
+  }
+   
+  .buttonl:hover .shadow {
+    width: 100%;
+  }
+   
+  .buttonl:hover p {
+    opacity: 0;
+  }
+   
+  .buttonl:hover .shadow span {
+    opacity: 1;
+  }
+

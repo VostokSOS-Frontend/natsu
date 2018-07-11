@@ -1,16 +1,113 @@
-div.levo {background-image: url(img/left.png);
-    width: 200px;
-    height: 200px;
-    }
-.levo:hover{
-        background-image: url(https://www.iconfinder.com/icons/1518241/arrow_arrows_direction_left_navigation_right_icon);
-    }
+@import "colors.css"
 
-div.pravo {background-image: url(img/right.png);
-    color: crimson;    }
+/*.dragneel {background-color: red;}*/
 
-.pravo:hover{ 
-        background-image: url(https://www.iconfinder.com/icons/1518262/arrow_arrows_direction_next_right_icon);
+.avaj {background-color: purple;}
+
+.bugs {background: springgreen;}
+
+thead {background-color: silver}
+
+.colonna {background-color: orange}
+
+
+.border td {border: 2px solid black;}
+.border th {border: 2px solid black;
+/*border-spacing: ;*/
+border-color: black}
+
+
+* {color: black};
+
+p {color: brown;}
+
+#para-1 {color: aqua}
+
+.tekst {color: darkmagenta}
+
+button.but.but {color: red}
+
+button.but {color: seagreen}
+
+:root:root:root:root .but {color: yellow}
+
+/* 3 штуки выше - варианты поднимать специфичность*/
+
+.but {color: royalblue !important;
+               font-size: 3rem !important;}
+
+[title] {color: peru}
+
+body {color: purple;}
+body {border: palevioletred;}
+
+.border {border-collapse: collapse;
+    border: inherit;
+    border-style: dashed;
+    color: initial;
+    direction: rtl;
+    /*quotes: ;*/}
+
+
+.abzac {background-color: gold;
+        width: 1600px;
+        height: 100px;
+        overflow: scroll;
     }
+.abzac::-webkit-scrollbar {
+    width: 5px;
+  }
+.abzac::-webkit-scrollbar-thumb:hover {
+    background-color: #cf479b;
+  }
+::-webkit-scrollbar {
+    background-color: #f71811a1;
+    color: blue;
+  }
 
-a:visited:hover {color: darkgreen }
+.caption {font-family: 'Shrikhand', cursive;
+text-shadow: 1px 1px 2px black, 3px -3px 0px blue, -3px 3px 0px yellow;
+}
+/*  font-family: 'Shrikhand', cursive;
+font-family: 'Raleway', sans-serif; */
+.tekst {font-family: 'Shrikhand', cursive !important;
+        }
+
+.text {border-radius: 10% 20%/50% 45% 28%;
+      background-color: blue;
+      display: inline-block;
+      padding: 10px 10px 12px 8px;
+      width: 100px;
+      height: 100px;}
+
+.yo {direction: rtl;}
+
+* {cursor: url('C:/Users/User/example/natsu/css/empire/Help.cur'), auto;}
+
+.menuitem {}
+
+.picture-1 {}
+
+.gogo {position: absolute;
+background-color: blue;
+width: 200px;
+height: 200px;
+top: 0px;
+left: 0px;
+z-index: 50;}
+
+.gogogo {width: 200px;
+         height: 200px;
+         background-color: red;
+         position: absolute;
+         top: 50px;
+         left: 50px;
+         z-index: 100;}
+
+.block3 {position: absolute;
+        background-color: black;
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: 100px;
+        z-index: 150;}
