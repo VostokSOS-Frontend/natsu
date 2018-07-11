@@ -59,9 +59,18 @@ img {
     margin: 150px 0;
     padding: 5px 5%;
     font-size: 25px;
-    border-radius: 5px;
+    border-radius: 4px;
     background-color: rgb(0, 81, 255);
     cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#button:hover {
+    box-shadow: 0 0 20px rgb(30,30,30);
+}
+
+#button:active{
+    border-color: orange;
 }
 
 #button #img {
