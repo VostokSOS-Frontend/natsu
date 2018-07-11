@@ -1,0 +1,80 @@
+h1 {
+	font-size: 132px;
+	font-family: Georgia;
+	color: #50FF7A;
+	text-align: center;
+
+    	margin-top: 24px;
+	text-shadow: #000 0 0 30px;
+}
+
+table {
+	width: 100%;
+}
+
+.menu table th {
+	width: 25%;
+}
+
+th {
+	width: 33%;
+}
+
+body {
+	text-shadow: #000 0 0 20px;
+	color: #49FF1A;
+	font-size: 48px;
+	background-image: url(img/background.jpg);
+}
+
+A {
+	color: #F0B000;
+}
+
+A:visited {
+	color:#FF0;
+}
+A:active {
+	color:#FA0
+}
+
+A[target="_blank"]{
+	Background-color:#lime;
+	color: black;
+}
+
+A[href^="http"]{
+	background-color: black;
+}
+
+.button {
+	text-shadow: red 1.5px -1.5px 0;
+	color: Orange;
+	background: #000;
+	padding: 5px;
+}
+.button:hover {
+	background-color: #555;
+}
+
+img {
+	height: 29%;
+	border: 10px;
+	border-style: ridge;
+	border-color: #AAA;
+}
+
+.def {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.imgadd {
+	height:15%;
+	margin-top: 100px;
+}
+.imgadd:hover {
+	height:30%;
+	margin-top: 0px;
+	
+}
