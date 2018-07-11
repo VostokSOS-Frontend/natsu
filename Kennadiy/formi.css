@@ -24,14 +24,14 @@ display: none;}
 input {opacity: 0;}
 
 input + div {background: url(css/sprite/spritesheet.png);
-    width: 32px;
-    height: 32px;
+    width: 34px;
+    height: 34px;
 } 
 
 input:checked + div {background: url(css/sprite/spritesheet.png);
-    width: 32px;
-    height: 32px;
-    background-position: 0, 40px;}
+    width: 34px;
+    height: 34px;
+    background-position-y: 33px;}
 
 .container {opacity: 0;
 height: 32px;
