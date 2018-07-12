@@ -53,26 +53,36 @@ img {
     box-shadow: 0 0 15px rgba(250,250,250,0.3);
 }
 
-#button {
-    position: relative;
-    margin: 150px 0;
-    padding: 5px 5%;
-    font-size: 25px;
-    border-radius: 4px;
-    background-color: rgb(0, 81, 255);
+.btn-submit {
     cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(0, 90, 248);
+    margin-top: 20px;
+    padding: 10px 10px ;
+    width: 100%;
+    border: 0;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 0 30px #000;
+}
+
+.btn-submit-text {
+    position: relative;
+    left: -7%;
+    font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
 }
 
-#button:hover {
-    box-shadow: 0 0 20px rgb(30,30,30);
-}
-
-#button:active{
-    border-color: orange;
-}
-
-#button #img {
-    height: 20px;
-    margin: -5px 10px;
+.btn-submit-text:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background-image: url(../img/lock.png);
+    background-size: cover;
 }
