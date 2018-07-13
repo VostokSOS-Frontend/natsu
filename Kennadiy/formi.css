@@ -21,7 +21,7 @@ display: none;}
 } */
 
 
-input {opacity: 0;}
+
 
 input + div {background: url(css/sprite/spritesheet.png);
     width: 34px;
@@ -36,3 +36,176 @@ input:checked + div {background: url(css/sprite/spritesheet.png);
 .container {opacity: 0;
 height: 32px;
 width: 32px;}
+
+
+.radiobut {background: url(css/sprite/spritesheet.png);
+    display: inline-block;
+    background-position-y: 33px;
+    background-position-x: 33px;
+    height: 32px;
+    width: 32px;
+    cursor: pointer;
+  }
+.radiobut  input {
+     opacity: 0;
+  }
+
+.radiobut input:checked + span {background: url(css/sprite/spritesheet.png);
+    display: inline-block;
+    background-position-x: 33px;
+    height: 32px;
+    width: 32px;}
+
+
+
+
+    input[type="radio"] {
+        display:none;
+    }
+    
+    input[type="radio"] + label {
+        font-family:Arial, sans-serif;
+    }
+    
+    input[type="radio"] + label span {
+        display:inline-block;
+        width:34px;
+        height:34px;
+        margin:-2px 10px 0 0;
+        vertical-align:middle;
+        background:url(css/sprite/spritesheet.png);
+        background-position-x: 33px;
+        background-position-y: 33px;
+        cursor:pointer;
+    }
+    
+    input[type="radio"]:checked + label span { background:url(css/sprite/spritesheet.png); 
+        background-position-x: 33px;
+    }
+
+
+
+/*.radiobut {opacity: 0;
+height: 34px;
+width: 34px;}
+
+input + span {background: url(css/sprite/spritesheet.png);
+    width: 34px;
+    height: 34px;
+    background-position-y: 33px;}
+
+input:checked + span {background: url(css/sprite/spritesheet.png);
+    width: 34px;
+    height: 34px;
+    background-position-y: 33px;
+    background-position-x: 33px;}*/
+
+
+/*.radiobut>input {opacity: 0;}
+
+.radiobut {display:inline-block;
+    width: 34px;
+    height: 34px;
+    background: url(css/sprite/spritesheet.png);
+    background-position-x: 33px;
+    background-position-y: 33px;}
+
+
+.radiobut>span {background: url(css/sprite/spritesheet.png);
+    background-position-x: 33px;
+    display:inline-block;
+}
+
+input:checked + span {
+    background: url(css/sprite/spritesheet.png);
+    left: 33px;
+}*/
+
+
+
+/*.radiobut {opacity: 0;
+    width: 34px;
+    height: 34px;
+    }
+
+label + input.radioknopka {
+        cursor: pointer;
+      }
+
+input + span {background: url(css/sprite/spritesheet.png);
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-position-x: 33px;
+    background-position-y: 33px;
+}
+
+input:checked + span {background: url(css/sprite/spritesheet.png);
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-position-x: 33px;
+}
+
+input + span#sprite_no {background: url(css/sprite/spritesheet.png);
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-position-x: 33px;
+    background-position-y: 33px;
+}
+
+input:checked + span#sprite_no {background: url(css/sprite/spritesheet.png);
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 34px;
+    background-position-x: 33px;
+}*/
+
+
+
+ /* .radioknopka + label {
+    cursor: pointer;
+  }
+  .radioknopka:not(checked) {
+    position: absolute;
+    opacity: 0;
+  }
+  .radioknopka:not(checked) + label {
+    position: relative;
+    padding: 0 0 0 35px;
+  }
+  .radioknopka:not(checked) + label::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    background: #FFF;
+  }
+  .radioknopka:not(checked) + label::after {
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #2ebbde;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.5);
+    opacity: 0;
+    transition: all .2s;
+  }
+  .radioknopka:checked + label::after {
+    opacity: 1;
+  }
+  .radioknopka:focus + label::before {
+    box-shadow: 0 0 3px 3px rgba(45,182,216,.3);
+  }*/
