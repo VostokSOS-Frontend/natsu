@@ -1,7 +1,8 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, serif;
     background-image: url("../img/background.jpg");
     background-repeat: round no-repeat;
     text-decoration: none;
@@ -27,10 +28,10 @@ body {
     text-align: left;
     padding: 10px 30px;
     width: 300px;
+    margin: 0 -180px;
     position: absolute;
     left: 50%;
-    top: 280px;
-    margin: -180px -150px;
+    top: 70px;
 }
 
 .box {
@@ -58,12 +59,13 @@ body {
 
 .btn-submit {
     cursor: pointer;
-    border-radius: 8px;
+    border-radius: 4px;
     background-color: rgb(0, 90, 248);
     margin-top: 20px;
     padding: 10px 10px ;
     width: 100%;
     border: 0;
+    margin-bottom: 15px;
 }
 
 .btn-submit:hover {
@@ -92,4 +94,5 @@ body {
 
 .tx {
     margin-top: 8px;
+    margin-bottom: 2px;
 }
