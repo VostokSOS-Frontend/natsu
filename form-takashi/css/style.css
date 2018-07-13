@@ -1,0 +1,135 @@
+body {
+    background: url(../img/background3.jpg) no-repeat;
+    overflow: hidden;
+}
+
+.position1 {
+    position: relative;
+    top: 8%;
+    left: 34%;
+    bottom: 3%;
+}
+
+.position {
+    position: absolute;
+    top: 11%;
+    left: 35.5%;
+}
+
+.creditka {
+    position: absolute;
+    top: 3%;
+    left: 38.75%;
+}
+
+.number {
+    position: absolute;
+    left: 36.5%;
+    top: 30%;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.card-number {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+ 
+img {
+    border-radius: 10px;
+    box-shadow: 10px solid black;
+}
+
+.holder {
+    position: absolute;
+    left: 36.5%;
+    top: 40%;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.expiration {
+    position: absolute;
+    left: 36.5%;
+    top: 50%;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.ccv {
+    position: absolute;
+    left: 36.5%;
+    top: 60%;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: absolute;
+    left: 38.75%;
+    bottom: 16%;
+    border: 3px;
+    font-size: 1rem;
+    padding: 0;
+    margin: 0;
+  }
+  .elementhover {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    
+    background-color: #377FBF;
+    
+    padding: 2rem 4rem;
+    border-radius: 10px;
+  }
+
+button {
+    color: grey;
+    border-width: 0;
+    padding: 0 0;
+}
+  
+  .elementhover {
+    cursor: pointer;
+    
+    transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+                transform  600ms cubic-bezier(.33,.11,.02,.99);}
+    
+    .elementhover:hover {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 32px 32px rgba(0, 0, 0, .15), 
+                 8px 64px 64px rgba(0, 0, 0, .15); 
+  
+      transform: scale(1.05)
+                 translateY(-0.5rem);
+    }
+    
+    
+    .elementhover:active {
+        box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 16px 16px rgba(0, 0, 0, .15), 
+                 8px 32px 32px rgba(0, 0, 0, .15); 
+    }
+
+    .zamok {
+        position: absolute;
+        bottom: 7%;
+        left: 83%;
+    }

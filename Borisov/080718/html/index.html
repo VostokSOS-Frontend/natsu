@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CARD</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<form action="index.html">
+<div class="container">
+    <p id="fst">
+        <div>card number</div>
+        <div>
+            <input class="box" required name="CN1" placeholder="1234" minlength="4" type="text" maxlength="4" size="3">
+            <input class="box" required name="CN2" placeholder="5678" minlength="4" type="text" maxlength="4" size="3">
+            <input class="box" required name="CN3" placeholder="9000" minlength="4" type="text" maxlength="4" size="3">
+            <input class="box" required name="CN4" placeholder="4321" minlength="4" type="text" maxlength="4" size="3">
+        </div>
+    </p>
+    <p>
+        <div>card holder</div>
+        <div><input class="box"  placeholder="Name" required name="card holder" type="text" size="29"></div>
+    </p>
+    <p>
+        <div>expiration date </div>
+        <div><input class="box"  placeholder="MM" required name="Month" type="text" size="3" maxlength="2"></div>
+        <div><input class="box"  placeholder="YYYY" required name="Year" type="text" size="3" maxlength="4"></div>
+        </p>
+    <p>
+        <div>ccv</div>
+    <div>
+        <input class="box" minlength="3" placeholder="123" required type="text" name="CCV" size="3" maxlength="3">
+    </div>
+    </p>
+    <button type="submit" class="btn-submit"><span class="btn-submit-text">Submit Payment</span></button>
+</div>
+</form>
+<img alt="Card" src="../img/card.png">
+</body>
+</html>
