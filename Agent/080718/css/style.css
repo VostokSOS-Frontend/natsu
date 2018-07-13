@@ -28,10 +28,10 @@ body {
     text-align: left;
     padding: 10px 30px;
     width: 300px;
+    margin: 0 -180px;
     position: absolute;
     left: 50%;
-    top: 280px;
-    margin: -180px -150px;
+    top: 70px;
 }
 
 .box {
