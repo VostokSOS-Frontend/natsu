@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-image: url("../img/background.jpg");
+    background-repeat: round no-repeat;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.container::before {
+    content: "";
+    display: block;
+    width: 301px;
+    height: 167px;
+    position: relative;
+    background-image: url("../img/card.png");
+    bottom: 40px;
+    border-radius: 14px;
+}
+
+.container {
+    border: 0;
+    box-shadow: 0 0 80px rgb(49, 49, 49);
+    border-radius: 4px;
+    background-color: rgb(230, 230, 230);
+    text-align: left;
+    padding: 10px 30px;
+    width: 300px;
+    position: absolute;
+    left: 50%;
+    top: 280px;
+    margin: -180px -150px;
+}
+
+.box {
+    border: 0.3px solid;
+    border-radius: 3px;
+    height: 22px;
+    border-color: rgba(100, 100, 100, 0.3);
+    background-color: rgb(230, 230, 230);
+    font-size: 14px;
+    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.3);
+    margin-right: calc((100% - (4 * (100% / 5))) / 6);
+}
+
+.num {
+    width: calc(100% / 5);
+}
+
+.name {
+    width: calc(100% - 8px);
+}
+
+.box:hover {
+    box-shadow: 0 0 15px rgba(250,250,250,0.3);
+}
+
+.btn-submit {
+    cursor: pointer;
+    border-radius: 8px;
+    background-color: rgb(0, 90, 248);
+    margin-top: 20px;
+    padding: 10px 10px ;
+    width: 100%;
+    border: 0;
+}
+
+.btn-submit:hover {
+    box-shadow: 0 0 30px #000;
+}
+
+.btn-submit-text {
+    position: relative;
+    left: -7%;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.btn-submit-text:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    right: -30px;
+    background-image: url(../img/lock.png);
+    background-size: cover;
+}
+
+.tx {
+    margin-top: 8px;
+}
