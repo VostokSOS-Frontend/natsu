@@ -36,3 +36,5 @@ input:checked + div {background: url(css/sprite/spritesheet.png);
 .container {opacity: 0;
 height: 32px;
 width: 32px;}
+
+/* pattern */
