@@ -1,10 +1,26 @@
+form {
+    position: relative;
+} 
+
+form:before {
+    content: '';
+    display: block;
+    width: 374px;
+    height: 243px;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    margin-left: -187px;
+    background-image: url(https://vostoksos-frontend.github.io/natsu/form-takashi/img/kreditka.png);
+    background-size: contain;
+}
+
 body {
     background: url(../img/background3.jpg) no-repeat;
 }
 
 .position1 {
-    margin-top: 51px;
-    margin-left: 514px;
+    margin: 45px auto;
     background-color: #fff;
     height: 631px;
     width: 438px;
