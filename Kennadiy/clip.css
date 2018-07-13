@@ -1,0 +1,47 @@
+/*.colloseum {clip: rect(0, 200px, 500px, 0);
+            background-image: url(img/colloseum.jpg);
+            position: absolute;
+            width: 100px;
+            height: 399px;
+            z-index: 50;
+            background-size: cover;}
+.colloseum:active {z-index: 1000;
+                    background-size: cover;
+                    width: 670px;
+                    height: 399px;}
+.sobaka {clip: rect(50px, auto, auto, 50px);
+    background-image: url(img/sobaka.jpg);
+    position: absolute;
+    width: 100px;
+    z-index: 50;
+    left: 400px;}
+.sobaka:active {z-index: 1000;}
+.everest {position: absolute;}
+.everest:active {z-index: 1000;}
+.svinka {clip: rect(50px, auto, auto, 50px);
+    background-image: url(img/svinka.jpg);
+    position: absolute;
+    width: 200px;
+    left: 58px;
+    z-index: 50;}
+.svinka:active {z-index: 1000;
+                width: 300px;
+                height: 298px;}
+.chainik {clip: rect(50px, auto, auto, 50px);
+    background-image: url(img/chainik.jpg);
+    position: absolute;
+    width: 200px;
+    left: 609px;
+    z-index: 50;}
+.chainik:active {z-index: 1000;
+                }
+
+div {position: relative;
+    width: 800px;
+    height: 399px;} */
+
+
+.colloseum {clip: rect(0, 60px, auto, auto);
+          left: 30;}
+.sobaka {clip: rect(0, 120px, auto, 60px);
+    left: 30;}
