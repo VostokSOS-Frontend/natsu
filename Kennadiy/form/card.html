@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="card.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+ <!--<div class="card"></div>-->
+ <form action="index.html">
+ <div class="form">
+        <div class="card"></div>
+     <p class="big_text">card number</p>
+     <input class="input_first_tag" type="number" minlength="4" maxlength="4" min="4000" max="4999" pattern="[0-9]{4}" placeholder="1234" required autofocus>
+     <input type="number" minlength="4" maxlength="4" min="0000" max="9999" pattern="[0-9]{4}" placeholder="5678" required>
+     <input type="number" minlength="4" maxlength="4" min="0000" max="9999" pattern="[0-9]{4}" placeholder="9000" required>
+     <input type="number" minlength="4" maxlength="4" min="0000" max="9999" pattern="[0-9]{4}" placeholder="4321" required>
+     
+     <p class="big_text card_holder">card holder</p>
+     <input class="name input_first_tag" type="text" minlength="2" placeholder="Name" size="26" required>
+
+     <p class="big_text expiration_date">expiration date</p>
+     <input class="input_first_tag" type="text" size="3" maxlength="2" value="MM" required>
+     <input type="text" size="3" maxlength="4" value="YYYY" required>
+
+     <p class="big_text cvv">cvv</p>
+     <input class="input_first_tag" type="number" minlength="3" maxlength="3" max="999" size="3" placeholder="123" required><br>
+
+     <button class="input_first_tag submit" type="submit"><span class="big_text">Submit Payment</span></button>
+
+ </div>
+ </form>
+</body>
+</html>
