@@ -1,0 +1,32 @@
+.img {
+    position: absolute;
+    top: 50px;
+    height: 300px;
+    width: 300px;
+}
+
+.img:active {
+    clip: auto;
+    z-index: 10;
+}
+
+.i1 {
+    clip: rect(0px, 60px, auto, auto);
+    left: 30;
+}
+
+.i2 {
+    clip: rect(0px, 120px, auto, 60px);
+}
+
+.i3 {
+    clip: rect(0px, 180px, auto, 120px);
+}
+
+.i4 {
+    clip: rect(0px, 240px, auto, 180px);
+}
+
+.i5 {
+    clip: rect(0px, 300px, auto, 240px);
+}
