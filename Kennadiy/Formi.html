@@ -12,7 +12,7 @@
 Login: <input autocomplete="on" autofocus type="text" name="login" maxlength="9" placeholder="log" required> Не более 9 символов <br>
 Password: <input type="password" name="password" minlength="6" size="40"> Минимум 6 символов<br>
 Birthdate: Time:<input type="time"> Day:<input type="number" min="1" max="31" value="day">  
-Month:<select disabled type="text" name="month">
+Month:<select disabled name="month">
     <option selected>Yan</option>
     <option>Fev</option>
     <option>Mart</option> </select>
@@ -43,7 +43,7 @@ Bio 2.0:<select multiple name="interesi" size="1">
 Sex: <input tabindex="2" type="radio" name="gender" value="male" checked> M <input name="gender" type="radio" value="female"> W
     
 <pre>       Pet
-<label><input type="checkbox" name="" value="cat" name="cat"> Cat</label>        <label>                 <input type="checkbox" value="hamster" name="hamster"> Hamster<br></label>
+<label><input type="checkbox" value="cat" name="cat"> Cat</label>        <label>                 <input type="checkbox" value="hamster" name="hamster"> Hamster<br></label>
 <input type="checkbox" value="dog" name="dog"> Dog                         <input type="checkbox" value="spider" name="spider"> Spider<br>
 <input type="checkbox" value="turtle" name="turtle"> Turtle                      <input type="checkbox" value="horse" name="Horse">Horse</pre> <br>
 Avatar: <input type="file"> <br> <br> <br>
@@ -60,11 +60,32 @@ CVV: <input type="number" min="111" max="999" name="cvv" required>
     <input type="checkbox">
     <div class="custom-mark"></div>
 </label>
+
+
+
+<!--<input type="text" form="name">-->
+<br> <br> <br> <br><br>
+<p>
+<label class="radiobut">
+    <input type="radio" name="vibor" class="radioknopka" checked>
+    <span id="sprite_yes"></span>  
+</label> Yes</p>
+<p>
+<label class="radiobut">
+    <input type="radio" name="vibor" class="radioknopka">
+    <span id="sprite_no"></span> 
+</label> No
 </p>
+
+
+<br><br><br><br>
+
+<input type="radio" id="r1" name="rr" />
+    <label for="r1"><span></span>1</label>
+    <p>
+    <input type="radio" id="r2" name="rr" />
+    <label for="r2"><span></span>2</label>
+
 </form>
-
-<input type="text" form="name">
-
-
 </body>
 </html>
