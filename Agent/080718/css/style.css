@@ -8,12 +8,15 @@ body {
     text-transform: uppercase;
 }
 
-img {
+.container::before {
+    content: "";
+    display: block;
+    width: 301px;
+    height: 167px;
+    position: relative;
+    background-image: url("../img/card.png");
+    bottom: 40px;
     border-radius: 14px;
-    position: absolute;
-    margin-top: 60px;
-    left: 50%;
-    margin-left: -120.5px;
 }
 
 .container {
@@ -30,23 +33,23 @@ img {
     margin: -180px -150px;
 }
 
-.container p {
-    margin: 5px 20px;
-}
-
-#fst {
-    padding: 130px 0 10px;
-}
-
 .box {
     border: 0.3px solid;
     border-radius: 3px;
     height: 22px;
     border-color: rgba(100, 100, 100, 0.3);
-    margin-right: 8px;
     background-color: rgb(230, 230, 230);
     font-size: 14px;
-    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.3)
+    box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.3);
+    margin-right: calc((100% - (4 * (100% / 5))) / 6);
+}
+
+.num {
+    width: calc(100% / 5);
+}
+
+.name {
+    width: calc(100% - 8px);
 }
 
 .box:hover {
@@ -85,4 +88,8 @@ img {
     right: -30px;
     background-image: url(../img/lock.png);
     background-size: cover;
+}
+
+.tx {
+    margin-top: 8px;
 }
