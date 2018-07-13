@@ -37,6 +37,9 @@ input:checked + div {background: url(css/sprite/spritesheet.png);
 height: 32px;
 width: 32px;}
 
+<<<<<<< HEAD
+/* pattern */
+=======
 
 .radiobut {background: url(css/sprite/spritesheet.png);
     display: inline-block;
@@ -209,3 +212,4 @@ input:checked + span#sprite_no {background: url(css/sprite/spritesheet.png);
   .radioknopka:focus + label::before {
     box-shadow: 0 0 3px 3px rgba(45,182,216,.3);
   }*/
+>>>>>>> e9157039415c39479cc7a5675265bfc5ce4a40b5
