@@ -1,13 +1,14 @@
 body {
     background: url(../img/background3.jpg) no-repeat;
-    overflow: hidden;
 }
 
 .position1 {
-    position: relative;
-    top: 8%;
-    left: 34%;
-    bottom: 3%;
+    margin-top: 51px;
+    margin-left: 514px;
+    background-color: #fff;
+    height: 631px;
+    width: 438px;
+    border-radius: 10px;
 }
 
 .position {
@@ -18,17 +19,55 @@ body {
 
 .creditka {
     position: absolute;
-    top: 3%;
-    left: 38.75%;
+    margin-top: -46px;
+    margin-left: 546px;
+    height: 279px;
+    width: 374px;
 }
 
 .number {
+    white-space: nowrap;
     position: absolute;
-    left: 36.5%;
-    top: 30%;
+    margin-top: 222px;
+    margin-left: 55px;
     border: 3px;
     font-size: 1rem;
     font-family: 'Noto Serif', serif;
+}
+
+.card-holder {
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 2px;
+    border: 1px solid gray;
+    width: 321.5px;
+    height: 31px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.card-exploration {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 4.5px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    border-radius: 3px;
+    width: 74.5px;
+    height: 35px;
+}
+
+.card-exploration2 {
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 4.5px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    border-radius: 3px;
+    width: 74.5px;
+    height: 35px;
 }
 
 .card-number {
@@ -36,18 +75,22 @@ body {
     border-radius: 6px;
     border: 1px solid gray;
     border-radius: 3px;
-    margin-left: 10px;
+    margin-top: 2px;
+    margin-left: 3px;
+    width: 63.5px;
+    height: 21px;
 }
  
 img {
     border-radius: 10px;
     box-shadow: 10px solid black;
+    max-width: 100%;
 }
 
 .holder {
     position: absolute;
-    left: 36.5%;
-    top: 40%;
+    margin-left: 54px;
+    margin-top: 293px;
     border: 3px;
     font-size: 1rem;
     font-family: 'Noto Serif', serif;
@@ -55,41 +98,49 @@ img {
 
 .expiration {
     position: absolute;
-    left: 36.5%;
-    top: 50%;
+    margin-left: 55px;
+    margin-top: 364px;
     border: 3px;
     font-size: 1rem;
     font-family: 'Noto Serif', serif;
 }
 
 .ccv {
-    position: absolute;
-    left: 36.5%;
-    top: 60%;
+position: absolute;
+    margin-left: 54px;
+    margin-top: 438px;
     border: 3px;
     font-size: 1rem;
     font-family: 'Noto Serif', serif;
 }
 
+.submit {
+    position: absolute;
+    margin-left: 14px;
+    margin-top: -31px;
+    color: white;
+    font-size: 1rem;
+}
+
 .container {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: right;
+    align-items: center;
     position: absolute;
-    left: 38.75%;
-    bottom: 16%;
     border: 3px;
     font-size: 1rem;
     padding: 0;
+    width: 321px;
+    height: 13px;
     margin: 0;
   }
   .elementhover {
     font-size: 1.25rem;
     text-transform: uppercase;
     color: #fff;
-    
+    margin-top: 531px;
+    margin-left: 59px;
     background-color: #377FBF;
-    
     padding: 2rem 4rem;
     border-radius: 10px;
   }
@@ -129,7 +180,7 @@ button {
     }
 
     .zamok {
-        position: absolute;
-        bottom: 7%;
-        left: 83%;
+        margin-bottom: 46px;
+        margin-left: 162px;
+        margin-top: -15px;
     }
