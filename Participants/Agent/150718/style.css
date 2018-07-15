@@ -46,6 +46,19 @@ h3 {
     z-index: 20;
 }
 
+.box::before {
+    z-index: 1;
+    content:"";
+    width: 380px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    top: -9px;
+    margin-left: -190px;
+    background-color: #EEE;
+    border-radius: 12px;
+}
+
 .f {
     padding-left: 41px;
     width: 100%;
@@ -80,9 +93,10 @@ h3 {
 }
 
 .btn-sbm:hover {
-    color: red;
+    color: #D00;
     border-color: #D00;   
 }
+
 .foot {
     width: 250px;
     position: relative;
@@ -93,17 +107,4 @@ h3 {
     font-size: 23px;
     color: #DDD;
     cursor: pointer;
-}
-
-.box::before {
-    z-index: 1;
-    content:"";
-    width: 380px;
-    height: 15px;
-    position: absolute;
-    left: 50%;
-    top: -9px;
-    margin-left: -190px;
-    background-color: #EEE;
-    border-radius: 12px;
 }
