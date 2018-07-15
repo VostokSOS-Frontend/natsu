@@ -1,0 +1,202 @@
+form {
+    position: relative;
+} 
+
+form:before {
+    content: '';
+    display: block;
+    width: 374px;
+    height: 243px;
+    position: absolute;
+    top: -48px;
+    left: 50%;
+    margin-left: -187px;
+    background-image: url(https://vostoksos-frontend.github.io/natsu/form-takashi/img/kreditka.png);
+    background-size: contain;
+}
+
+body {
+    background: url(../img/background3.jpg) no-repeat;
+}
+
+.position1 {
+    margin: 45px auto;
+    background-color: #fff;
+    height: 631px;
+    width: 438px;
+    border-radius: 10px;
+}
+
+.position {
+    position: absolute;
+    top: 11%;
+    left: 35.5%;
+}
+
+.creditka {
+    position: absolute;
+    margin-top: -46px;
+    margin-left: 546px;
+    height: 279px;
+    width: 374px;
+}
+
+.number {
+    white-space: nowrap;
+    position: absolute;
+    margin-top: 222px;
+    margin-left: 55px;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.card-holder {
+    position: absolute;
+    margin-left: 3px;
+    margin-top: 2px;
+    border: 1px solid gray;
+    width: 321.5px;
+    height: 31px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.card-exploration {
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 4.5px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    border-radius: 3px;
+    width: 74.5px;
+    height: 35px;
+}
+
+.card-exploration2 {
+    position: absolute;
+    margin-left: 85px;
+    margin-top: 4.5px;
+    border: 1px solid gray;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+    border-radius: 3px;
+    width: 74.5px;
+    height: 35px;
+}
+
+.card-number {
+    padding: 5px;
+    border-radius: 6px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: 2px;
+    margin-left: 3px;
+    width: 63.5px;
+    height: 21px;
+}
+ 
+img {
+    border-radius: 10px;
+    box-shadow: 10px solid black;
+    max-width: 100%;
+}
+
+.holder {
+    position: absolute;
+    margin-left: 54px;
+    margin-top: 293px;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.expiration {
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 364px;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.ccv {
+position: absolute;
+    margin-left: 54px;
+    margin-top: 438px;
+    border: 3px;
+    font-size: 1rem;
+    font-family: 'Noto Serif', serif;
+}
+
+.submit {
+    position: absolute;
+    margin-left: 14px;
+    margin-top: -31px;
+    color: white;
+    font-size: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    border: 3px;
+    font-size: 1rem;
+    padding: 0;
+    width: 321px;
+    height: 13px;
+    margin: 0;
+  }
+  .elementhover {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 531px;
+    margin-left: 59px;
+    background-color: #377FBF;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+  }
+
+button {
+    color: grey;
+    border-width: 0;
+    padding: 0 0;
+}
+  
+  .elementhover {
+    cursor: pointer;
+    
+    transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+                transform  600ms cubic-bezier(.33,.11,.02,.99);}
+    
+    .elementhover:hover {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 32px 32px rgba(0, 0, 0, .15), 
+                 8px 64px 64px rgba(0, 0, 0, .15); 
+  
+      transform: scale(1.05)
+                 translateY(-0.5rem);
+    }
+    
+    
+    .elementhover:active {
+        box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 16px 16px rgba(0, 0, 0, .15), 
+                 8px 32px 32px rgba(0, 0, 0, .15); 
+    }
+
+    .zamok {
+        margin-bottom: 46px;
+        margin-left: 162px;
+        margin-top: -15px;
+    }
