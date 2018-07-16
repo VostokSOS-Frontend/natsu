@@ -50,13 +50,13 @@ h3 {
     z-index: 1;
     content:"";
     width: 380px;
-    height: 15px;
+    height: 9px;
     position: absolute;
     left: 50%;
     top: -9px;
     margin-left: -190px;
     background-color: #EEE;
-    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
 }
 
 f {
