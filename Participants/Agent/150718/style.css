@@ -59,9 +59,10 @@ h3 {
     border-radius: 12px;
 }
 
-.f {
+f {
     padding-left: 41px;
     width: 100%;
+    transition: top 0.75s;
 }
 
 .field {
@@ -72,6 +73,11 @@ h3 {
     border-bottom: 2px solid #DDD;
     width: 315px;
     height: 55px;
+    transition: border-color 0.5s;
+}
+
+.field:focus {
+    border-color: #D00;
 }
 
 .btn-sbm {
