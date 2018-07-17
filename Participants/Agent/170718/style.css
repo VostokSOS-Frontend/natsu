@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-family: 'Varela Round', sans-serif;
+}
+
+ul.menu {
+    margin: 0;
+    padding: 4px;
+    font-size: 15px;
+}
+
+ul.menu li {
+    display: inline;
+    margin-right: 5px;
+    padding: 3px;
+}
+
+.fst::first-letter {
+    font-size: 50px;
+}
