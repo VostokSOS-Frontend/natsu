@@ -6,22 +6,110 @@ h2 {text-align: center;}
 
 span {color: rosybrown;}      Изначально для верстки той динамичной формы*/
 
-header {text-transform: uppercase;}
+body {background-image: url(img/1/maket2.png);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      font-family: sans-serif;
+      width: 100%;}
+
+nav {text-transform: uppercase;}
+
+.logo {background-image: url(img/1/logo.png);
+       position: absolute;
+       width: 35x;
+       height: 35px;
+       z-index: 105;}
+
+
+
+ul {list-style: none;
+    font-size: 0.79rem;
+    font-style: initial;
+    font-weight: bold;
+    margin-top: 62px;
+    margin-left: 82px;
+    letter-spacing: 0.2rem;
+    word-spacing: 3.1rem;}
+
+/*.home {font-size: 0.79rem;
+    font-style: initial;
+    font-weight: bold;
+    margin-top: 62px;
+    margin-left: 82px;
+    letter-spacing: 0.2rem;}*/
+
+li {display: inline;}
+
+li a {text-decoration: none;
+      color: rgb(170, 178, 199);}
+    
+.login {display: block;
+        position: absolute;
+        top: 60px;
+        left: 1032px;}
+
+.signup {display: block;
+    position: absolute;
+    border-width: 0.05rem;
+    border-color: rgb(59, 118, 255);
+    border-style: solid;
+    border-radius: 5%;
+    border-bottom-width: 0.1rem;
+    top: 49px;
+    width: 93px;
+    height: 33px;
+    line-height: 33px;
+    left: 1119px;
+    text-align: center;}
+
+.signup span {vertical-align: middle;}
+    
+
+.home {color: rgb(71, 90, 139);}
 
 .central-button {text-transform: uppercase;
-                 height: 60px;
-                 width: 120px;
-                 background: linear-gradient(to right, blue, rgb(119, 119, 226));
+                 height: 50px;
+                 line-height: 50px;
+                 letter-spacing: 5px;
+                 font-weight: bold;
+                 width: 189px;
+                 background: linear-gradient(to right, rgb(58, 117, 255), rgb(98, 179, 255));
                  
                  color: white;
                  text-align: center;
-                 vertical-align: middle;
-                 font-size: 0.8rem;
-                 position: relative;
-                 top: 350px;
-                 left: 180px;}
+                 font-size: 0.7rem;
+                 position: absolute;
+                 top: 523px;
+                 left: 60px;
+                 border-radius: 3%;
+                 box-shadow: 0 6px 4px -4px rgba(0, 0, 0, .2), 23px 0 20px -23px rgba(0, 0, 0, .8),;}
 
-div p {display: flex;
-       justify-content: center;
-       align-items: center;
+p {position: absolute;
+  top: 260px;
+  left: 60px;
+  letter-spacing: 1px;
+  color: rgb(71, 90, 139);}
+
+.biggest_text {font-size: 3rem;
+               }
+
+.big_text {font-size: 3rem;
+            font-weight: 300;
+            margin-left: 20px;
+            line-height: 1.1rem;}
+
+.next_line {line-height: 1.6;}
+
+.small_text {position: absolute;
+             top: 400px;
+             letter-spacing: 0.08rem;
 }
+
+
+
+
+
+/*div p {display: flex;
+       justify-content: center;
+       align-items: center;}*/
+
