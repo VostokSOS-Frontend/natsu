@@ -8,6 +8,15 @@ html {
     background: linear-gradient(to bottom,#ebf3fe,#FFFFFF) no-repeat;
 }
 
+a {
+    color: darkgrey;
+    border: none;
+}
+
+a:hover {
+    color: grey;
+}
+
 .menu {
     text-transform: uppercase;
     font-family: "Varela Round", sans-serif;
@@ -25,20 +34,20 @@ html {
     height: 40px;
 }
 
-#mf {
-    margin-left: 185px;
+.mf {
+    margin-left: 60px;
     font-weight: bold;
     color: #4c576d;
 }
 
-#sign {
+.sign {
     margin-left: 54px;
     border: 2px solid;
     border-radius: 2px;
     border-color: rgb(23, 197, 168);
 }
 
-#log {
+.log {
     margin-left: calc(100% / 25);
 }
 
