@@ -1,0 +1,181 @@
+body {
+    font-family: sans-serif;
+    background: url(../img/background.jpg)
+}
+
+a {
+    color: black;
+}
+
+.logo {
+    position: absolute;
+    margin-top: -578px;
+    margin-left: 61px;
+}
+
+ul {
+    list-style: none; 
+    margin: 0;
+    padding-left: 0; 
+}
+
+    .menu {
+        font-size: 0.8rem;
+        position: relative;
+   margin-left: 73px;
+   margin-top: 68px;
+    height: 7px;
+}
+
+a {text-decoration: none;}
+
+li {
+    display: inline-block;
+}
+
+.menu li {
+    margin-left: 70px;
+}
+
+.jirnoe {
+    font-weight: bold;
+}
+
+.obichnoe {
+    font-weight: normal;
+}
+
+.zaglav {
+    position: relative;
+    margin-left: 58px;
+    margin-top: 230px;
+    font-size: 3.25rem;
+}
+
+.text {
+    position: absolute;
+    font-size: 1.5rem;
+    margin-left: 58px;
+}
+
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    border: 3px;
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 30px;
+    margin: 0;
+  }
+  .elementhover {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-top: 146px;
+    margin-left: 59px;
+    background: linear-gradient(to left, #699FBF, #377FBF, #378FBF, #379FBF, #379FBF);
+    padding: 2rem 4rem;
+    border-radius: 3px;
+  }
+
+
+  
+  .elementhover {
+    cursor: pointer;
+    
+    transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+                transform  600ms cubic-bezier(.33,.11,.02,.99);}
+    
+    .elementhover:hover {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 32px 32px rgba(0, 0, 0, .15), 
+                 8px 64px 64px rgba(0, 0, 0, .15); 
+  
+      transform: scale(1.05)
+                 translateY(-0.5rem);
+    }
+    
+    
+    .elementhover:active {
+        box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 16px 16px rgba(0, 0, 0, .15), 
+                 8px 32px 32px rgba(0, 0, 0, .15); 
+                }
+
+                .submit {
+                    white-space: nowrap;
+                    position: absolute;
+                     margin-left: -27px;
+                }         
+                      
+                .starter {
+                width: 213px;
+                height: 13px;
+                 margin-top: 146px;
+                 margin-left: 59px; 
+                }
+
+.login {
+    position: absolute;
+    width: 109px;
+    height: 43px;
+    margin-top: -585px;
+    margin-left: 1106px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+}   
+
+.signup {
+    position: absolute;
+    width: 109px;
+    height: 43px;
+    margin-top: -585px;
+    margin-left: 1228px;
+    font-size: 1rem;
+    background: white;
+    cursor: pointer;
+    border: 1.5px solid black;
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+.logintxt {
+    white-space: nowrap;
+    position: absolute;
+     margin-left: -27px;
+     margin-top: -8px;
+}
+
+.signuptxt {
+    white-space: nowrap;
+    position: absolute;
+     margin-left: -30px;
+     margin-top: -8px;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a:hover {
+    border-bottom: 1.5px solid black;
+}
+
+.login:hover {
+    border-bottom: 1.5px solid black;
+}
+
+.signup:hover {
+    border: 1.5px solid red;
+}

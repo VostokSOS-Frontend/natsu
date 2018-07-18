@@ -1,0 +1,27 @@
+/*h1 {text-align: center;}
+
+h2 {text-align: center;}
+
+.h_text {text-align: center;}
+
+span {color: rosybrown;}      Изначально для верстки той динамичной формы*/
+
+header {text-transform: uppercase;}
+
+.central-button {text-transform: uppercase;
+                 height: 60px;
+                 width: 120px;
+                 background: linear-gradient(to right, blue, rgb(119, 119, 226));
+                 
+                 color: white;
+                 text-align: center;
+                 vertical-align: middle;
+                 font-size: 0.8rem;
+                 position: relative;
+                 top: 350px;
+                 left: 180px;}
+
+div p {display: flex;
+       justify-content: center;
+       align-items: center;
+}

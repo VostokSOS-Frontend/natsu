@@ -50,31 +50,66 @@ h3 {
     z-index: 1;
     content:"";
     width: 380px;
-    height: 15px;
+    height: 9px;
     position: absolute;
     left: 50%;
     top: -9px;
     margin-left: -190px;
     background-color: #EEE;
-    border-radius: 12px;
+    border-radius: 12px 12px 0 0;
 }
 
 f {
+    position: absolute;
     padding-left: 41px;
     width: 100%;
-    transition: top 0.75s;
+    transition: top 0.75s, font-size 0.5s;
+}
+
+.name {
+    top: 160px;
+    left: 0;
+}
+
+.pass {
+    top: 275px;
+    left: 0;
+}
+
+.field:focus ~ .name { 
+    top: 120px;
+    font-size: 15px;
+}
+
+.field0:focus ~ .pass { 
+    top: 235px;
+    font-size: 15px;
 }
 
 .field {
     font-size: 20px;
     margin-left: 41px;
     margin-bottom: 25px;
+    margin-top: 30px;
     border: none;
     border-bottom: 2px solid #DDD;
     width: 315px;
     height: 55px;
     transition: border-color 0.5s;
 }
+
+.field0 {
+    font-size: 20px;
+    margin-left: 41px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid #DDD;
+    width: 315px;
+    height: 55px;
+    transition: border-color 0.5s;
+}
+
 
 .field:focus {
     border-color: #D00;
