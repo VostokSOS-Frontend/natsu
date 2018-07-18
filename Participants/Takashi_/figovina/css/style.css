@@ -1,6 +1,7 @@
 body {
     font-family: sans-serif;
-    background: url(../img/background.jpg)
+    background: url(../img/background.jpg);
+    font-family: 'Muli', sans-serif;
 }
 
 a {
@@ -9,7 +10,7 @@ a {
 
 .logo {
     position: absolute;
-    margin-top: -578px;
+    margin-top: -582px;
     margin-left: 61px;
 }
 
@@ -23,7 +24,7 @@ ul {
         font-size: 0.8rem;
         position: relative;
    margin-left: 73px;
-   margin-top: 68px;
+   margin-top: 63px;
     height: 7px;
 }
 
@@ -56,6 +57,7 @@ li {
     position: absolute;
     font-size: 1.5rem;
     margin-left: 58px;
+    bottom: 32%;
 }
 
 .container {
