@@ -14,9 +14,8 @@ body {background-image: url(img/1/maket2.png);
 
 nav {text-transform: uppercase;}
 
-.logo {background-image: url(img/1/logo.png);
-       position: absolute;
-       width: 35x;
+.logo {position: absolute;
+       width: 35px;
        height: 35px;
        z-index: 105;}
 
@@ -42,6 +41,8 @@ li {display: inline;}
 
 li a {text-decoration: none;
       color: rgb(170, 178, 199);}
+
+li a:active {color: rgb(71, 90, 139);}
     
 .login {display: block;
         position: absolute;
@@ -65,7 +66,7 @@ li a {text-decoration: none;
 .signup span {vertical-align: middle;}
     
 
-.home {color: rgb(71, 90, 139);}
+
 
 .central-button {text-transform: uppercase;
                  height: 50px;
@@ -74,7 +75,7 @@ li a {text-decoration: none;
                  font-weight: bold;
                  width: 189px;
                  background: linear-gradient(to right, rgb(58, 117, 255), rgb(98, 179, 255));
-                 
+                 cursor: pointer;
                  color: white;
                  text-align: center;
                  font-size: 0.7rem;
@@ -91,6 +92,7 @@ p {position: absolute;
   color: rgb(71, 90, 139);}
 
 .biggest_text {font-size: 3rem;
+               font-weight: bold;
                }
 
 .big_text {font-size: 3rem;
