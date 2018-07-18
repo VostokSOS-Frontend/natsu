@@ -76,6 +76,36 @@ f {
     left: 0;
 }
 
+.field {
+    position: relative;
+    font-size: 20px;
+    margin-left: 41px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid #DDD;
+    width: 315px;
+    height: 55px;
+    transition: border-color 0.5s;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.field0 {
+    position: relative;
+    font-size: 20px;
+    margin-left: 41px;
+    margin-bottom: 25px;
+    margin-top: 30px;
+    border: none;
+    border-bottom: 2px solid #DDD;
+    width: 315px;
+    height: 55px;
+    transition: border-color 0.5s;
+    z-index: 10;
+    background-color: transparent;
+}
+
 .field:focus ~ .name { 
     top: 120px;
     font-size: 15px;
@@ -86,33 +116,32 @@ f {
     font-size: 15px;
 }
 
-.field {
-    font-size: 20px;
-    margin-left: 41px;
-    margin-bottom: 25px;
-    margin-top: 30px;
-    border: none;
-    border-bottom: 2px solid #DDD;
-    width: 315px;
-    height: 55px;
-    transition: border-color 0.5s;
+.field:focus ~ .l1 {
+    width: 200px;
 }
 
-.field0 {
-    font-size: 20px;
-    margin-left: 41px;
-    margin-bottom: 25px;
-    margin-top: 30px;
-    border: none;
-    border-bottom: 2px solid #DDD;
-    width: 315px;
-    height: 55px;
-    transition: border-color 0.5s;
+.field0:focus ~ .l2 {
+    width: 200px;
 }
 
-
-.field:focus {
+.line {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
     border-color: #D00;
+    transition: width 0.75s;
+    z-index: 30;
+}
+
+.l1 {
+    margin-left: 41px;
+    top: 200px;
+}   
+
+.l2 {
+    margin-left: 41px;
+    top: 300px;
 }
 
 .btn-sbm {
