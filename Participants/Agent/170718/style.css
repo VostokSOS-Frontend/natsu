@@ -64,7 +64,7 @@ ul li:hover {
 }
 
 button {
-    margin: 80px 100px 120px;
+    margin: 80px 100px 10px;
     text-transform: uppercase;
     padding: 16px 30px;
     letter-spacing: 3px;
