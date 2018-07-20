@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     background-image: url(./img/index.png) no-repeat;
-
+    min-width: 966px;
 }
 
 html {
@@ -31,34 +31,31 @@ a:hover {
     letter-spacing: 2px;
 }
 
+.menu li {
+    display: inline;
+    padding: 5px 10px;
+    margin-left: calc(100% / 30); 
+}
+
+.menu ul .login {
+    margin-left:calc(100% / 3.6 + 150px);
+}
+
+.menu ul .sign {
+    padding: 13px 26px;
+    margin-left: 54px;
+    border: 2px solid;
+    border-radius: 3px;
+    border-color:#89aacb;
+}
+
 .logo {
-    display: block;
-    position: absolute;
-    top: 65px;
-    left: 160px;
     height: 40px;
+    margin: -50px;
 }
 
 .mf {
-    margin-left: 60px;
     font-weight: bold;
-}
-
-.sign {
-    margin-left: 54px;
-    border: 2px solid;
-    border-radius: 2px;
-    border-color: rgb(23, 197, 168);
-}
-
-.log {
-    margin-left: calc(100% / 25);
-}
-
-ul li {
-    display: inline;
-    padding: 5px 10px;
-    margin-left: calc(100% / 15); 
 }
 
 ul li:hover {
@@ -66,18 +63,16 @@ ul li:hover {
 }
 
 button {
-    position: absolute;
-    left: 108px;
-    top: 646px;
+    margin: 80px 100px;
     text-transform: uppercase;
-    padding: 14px 22px;
+    padding: 16px 30px;
     letter-spacing: 3px;
     font-family: "Varela Round", sans-serif;
     font-weight: bold;
     color: white;
     background: linear-gradient(to right,#3c74ff,#64b4fd);
     border: none;
-    border-radius: 5px;
+    border-radius: 2px;
     transition: border-color 0.25s; 
     text-align: center;
 }
@@ -87,7 +82,7 @@ button:hover {
     cursor: pointer;
 }
 
-.fst {
+.first {
     display: block;
     width: 825px;
     font-size: 50px;
@@ -97,7 +92,7 @@ button:hover {
     color: #475b8d;
 }
 
-.scnd {
+.second {
     display: block;
     width: 545px;
     letter-spacing: 1px;
