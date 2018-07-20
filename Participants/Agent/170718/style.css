@@ -39,6 +39,7 @@ a:hover {
 
 .menu ul .login {
     margin-left:calc(100% / 3.6 + 150px);
+    line-height: 65px;
 }
 
 .menu ul .sign {
