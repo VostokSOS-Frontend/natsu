@@ -10,7 +10,7 @@ body {background-image: url(img/1/maket2.png);
       background-repeat: no-repeat;
       background-size: 100%;
       font-family: sans-serif;
-      width: 100%;}
+      min-width: 960px;}
 
 nav {text-transform: uppercase;}
 
@@ -104,8 +104,7 @@ p {position: absolute;
 
 .small_text {position: absolute;
              top: 400px;
-             letter-spacing: 0.08rem;
-}
+             letter-spacing: 0.08rem;}
 
 
 
