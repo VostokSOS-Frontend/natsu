@@ -64,7 +64,7 @@ ul li:hover {
 }
 
 button {
-    margin: 80px 100px;
+    margin: 80px 100px 120px;
     text-transform: uppercase;
     padding: 16px 30px;
     letter-spacing: 3px;
@@ -74,12 +74,15 @@ button {
     background: linear-gradient(to right,#3c74ff,#64b4fd);
     border: none;
     border-radius: 2px;
-    transition: border-color 0.25s; 
+    transition: box-shadow 0.5s, padding 0.5s, margin 0.5s, font-size 0.5s;
     text-align: center;
 }
 
 button:hover {
-    box-shadow: 0 0 10px;
+    font-size: 20px;
+    padding: 24px 38px;
+    margin: 72px 100px;
+    box-shadow: -8px 8px 15px rgb(80, 80, 80);
     cursor: pointer;
 }
 
