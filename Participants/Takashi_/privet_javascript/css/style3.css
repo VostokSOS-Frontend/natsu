@@ -1,0 +1,166 @@
+body{
+    position: relative;
+    background: #3d77fd;
+    color: white;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    z-index: 10;
+}
+
+.txt {
+    font-size: 1.75rem;
+    margin-left: 20%;
+    z-index: 10;
+}
+
+.question {
+    font-size: 2rem;
+    margin-left: 11%;
+    z-index: 10;
+}
+
+label {
+    font-size: 1.5rem;
+    z-index: 10;
+}
+
+form {
+    position: relative;
+    margin-top: 15%;
+    margin-left: 30%;
+    z-index: 10;
+}
+
+.q {
+    position: relative;
+    margin-right: 400px;
+    z-index: 10;
+}
+
+.w {
+    z-index: 10;
+}
+
+.e {
+    position: absolute;
+    right: 42%;
+    top: 41%;
+    z-index: 10;
+}
+
+.r {
+    position: absolute;
+    right: 40.5%;
+}
+
+
+.container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: relative;
+    border: 3px;
+    font-size: 1rem;
+    padding: 0;
+    margin-bottom: 30px;
+    margin: 0;
+    z-index: 10;
+  }
+  .elementhover {
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fff;
+    background:#3d77fd;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    z-index: 10;
+  }
+
+
+  
+  .elementhover {
+    cursor: pointer;
+    z-index: 10;
+    
+    transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+                transform  600ms cubic-bezier(.33,.11,.02,.99);}
+    
+    .elementhover:hover {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 32px 32px rgba(0, 0, 0, .15), 
+                 8px 64px 64px rgba(0, 0, 0, .15); 
+  
+      transform: scale(1.05)
+                 translateY(-0.5rem);
+                 z-index: 10;
+    }
+    
+    
+    .elementhover:active {
+        box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 16px 16px rgba(0, 0, 0, .15), 
+                 8px 32px 32px rgba(0, 0, 0, .15); 
+                 z-index: 10;
+                }
+     
+                .otvet1 {
+                    margin-top: 5px;
+                    margin-left: -51px;
+                    z-index: 10;
+                }
+                .otvet2 {
+                    margin-top: 5px;
+                    margin-left: -51px;
+                    z-index: 10;
+                }
+                .otvet3 {
+                    margin-top: -116px;
+                    margin-left: 490px;
+                    z-index: 10;
+                } 
+                .otvet4 {
+                    margin-top: 4px;
+                    margin-left: 492px;
+                    z-index: 10;
+                }
+
+                .krujok1 {
+                    height:100px;
+                    width:100px;
+                    border-radius:100%+100%+100%+100%;
+                    background:green;
+                    border-width:11px;
+                    border-style:outset;
+                    border-color:black;
+                    z-index: 10;
+                    }
+
+
+
+.lose {
+}
+            .lose:push { width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                   width: 250px;
+                    height: 250px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin: -125px 0 0 -125px;
+                    font-size: 5rem;
+                    background-color: red;
+                    color: black
+                }
