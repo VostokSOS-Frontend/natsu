@@ -7,8 +7,8 @@ document.write("<div class=\"circle\">");
 if (Offset == "") {Offset = 0};
 let j = 0;
 for (let i=0;i<360;i+=step) {
-	let x = Math.cos(i*(Math.PI/180)+200+Offset)*Radius+1.2*Radius;
-    let y = Math.sin(i*(Math.PI/180)+200+Offset)*Radius+1.2*Radius;
+	let x = Math.cos(i*(Math.PI/180)-90+Offset)*Radius+1.2*Radius;
+    let y = Math.sin(i*(Math.PI/180)-90+Offset)*Radius+1.2*Radius;
 	document.write("<span style=\"position: absolute; left: "+x+"px; top: "+y+"px"+"\">"+str[j]+"</span>");
     j++
 }
