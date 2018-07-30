@@ -4,17 +4,14 @@ let deposit = 100;
 let rate = 0;
 let win = 0;
 let game = 0;
-
-alert("Ваш депзоит составляет "+deposit+" кредитов");
-
 function Rate()
 {
-    
     rate = +prompt("Сделайте вашу ставку");
     
     if (rate != 0 && rate <= deposit && rate > 0) 
     {
         game = 1;
+        document.write("Вы поставили: "+rate+" кредитов");
         return(1);
     }
     else if (rate > deposit || rate < 0 || isNaN(rate))   
@@ -40,7 +37,7 @@ function Roll()
     else 
     {
         win = 0;
-        document.write("<p>Вы поставили на: "+Rate+"</p> <p><ul>");
+        document.write("<p>Вы поставили на: "+Rate+" грань</p> <p><ul>");
         for (let i = 0; i < 3; i++)
         {
             let num = Math.round(Math.random()*6);
@@ -56,6 +53,10 @@ function Roll()
 
 function Game()
 {
+    document.write("<hr>");
+    alert("Ваш депзоит составляет "+deposit+" кредитов");
+    if (deposit != 0)
+    {
     while (true) 
         {
         let result = Rate();
@@ -64,6 +65,12 @@ function Game()
             break;
             }
         }
+    }
+        else 
+            {
+                game = 0;
+                alert("Вы проиграли! \nВаш выигрыш составил: "+(deposit-100)+" кредитов");
+            };
     if (game)
         {
             while (true)
@@ -84,3 +91,6 @@ function Game()
 
 
 Game();
+while (game){
+Game();
+}
