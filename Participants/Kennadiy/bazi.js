@@ -19,3 +19,15 @@ for (let i = 1; i <= 10; i++) {
 }
 if ((i+k)%0) {document.write('<td style="background-color: green">')}
 document.write('/table');
+
+
+/* МАССИВЫ
+let todoList = [];
+todoList.push('Покормить');
+todoList.push('Поиграть');
+
+for (let i=0; i<todoList.length; i++) {document.write('<p>' + todoList[i] + '</p>')
+}
+
+todoList.forEach(function(element) {document.write('<p>' + element + '</p>');
+}); */
