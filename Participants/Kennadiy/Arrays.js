@@ -15,8 +15,8 @@ let delo = prompt('Kakie dela', 'Kakie?');
 } */
 
 function output () {
-let tag_delo = '<ul>';
-todoList.forEach(function(element, index) {document.write('<li>' + element + '</li>' + '<button onclick="remove_item(' + index + '>" X </button>');
+let tag_delo = '<ol>';
+todoList.forEach(function(element, index) {document.write('<li>' + element + '</li>' + '<button onclick="remove_item(' + index + ')"> X </button>');
 });
 document.getElementById('output').innerHTML=tag_delo;
 }
@@ -30,4 +30,9 @@ document.getElementById('add_delo').innerHTML=textarea; */
 function remove_item (index) {
     todoList.splice(index, 1);
     output();
+}
+
+function create_item () {
+    
+    
 }
