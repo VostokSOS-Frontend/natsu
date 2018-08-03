@@ -16,7 +16,7 @@ list.forEach(function(element) {
     document.write("<p>"+i+"]"+element+"</p>");
 });
 */
-let List = [];
+let List=[];
 function readList()
 {
     let htmlOut = "<ul>";
@@ -38,4 +38,28 @@ function removeList(index)
 function clearText()
 {
     document.getElementById("text").value = "";
+}
+function saveList()
+{
+    localStorage.setItem("List",List);
+    alert("Сохранено!");
+}
+function clearList()
+{
+    localStorage.removeItem("List");
+    alert("Удалено!");
+}
+function loadList()
+{
+    let chars = localStorage.getItem("List");
+    let j = 0;
+    for (let i = 0; i < chars.length; i++)
+    {
+        if(chars[i] != ","){
+            List[j] = chars[i];
+            j++;
+        }
+    }
+    alert("Сохранение загружено!");
+    readList();
 }
