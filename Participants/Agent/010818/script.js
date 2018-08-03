@@ -35,3 +35,7 @@ function removeList(index)
     List.splice(index,1);
     readList();
 }
+function clearText()
+{
+    document.getElementById("text").value = "";
+}
