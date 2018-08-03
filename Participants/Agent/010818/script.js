@@ -56,9 +56,16 @@ function loadList()
     for (let i = 0; i < chars.length; i++)
     {
         if(chars[i] != ","){
-            List[j] = chars[i];
-            j++;
+            if(List[j] == undefined)
+            {
+                List[j] = chars[i];
+            }
+            else 
+            {
+                List[j] += chars[i];
+            }
         }
+        else {j++}
     }
     alert("Сохранение загружено!");
     readList();
