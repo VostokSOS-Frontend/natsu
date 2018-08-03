@@ -17,16 +17,21 @@ list.forEach(function(element) {
 });
 */
 let List = [];
-function writeList()
+function readList()
 {
-    let message = document.getElementById("text").value;
-    List.push(message);
     let htmlOut = "<ul>";
     List.forEach(function(element,index){htmlOut += "<li>" + element + "<button onclick=\"removeList("+index+")\">X</button>"+"</li>";});
     htmlOut += "</ul>";
     document.getElementById("list").innerHTML=htmlOut;
 }
+function writeList()
+{
+    let message = document.getElementById("text").value;
+    List.push(message);
+    readList();
+}
 function removeList(index)
 {
     List.splice(index,1);
+    readList();
 }
