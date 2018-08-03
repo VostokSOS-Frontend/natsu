@@ -38,13 +38,15 @@ a:hover {
 }
 
 .menu ul .login {
-    margin-left:calc(100% / 3.6 + 150px);
+    display: inline;
+    padding: 0;
+    margin-left: calc(90% - 966px);
     line-height: 65px;
 }
 
 .menu ul .sign {
     padding: 13px 26px;
-    margin-left: 54px;
+    margin: 0 0 0 54px;
     border: 2px solid;
     border-radius: 3px;
     border-color:#89aacb;

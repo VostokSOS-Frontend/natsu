@@ -117,31 +117,34 @@ f {
 }
 
 .field:focus ~ .l1 {
-    width: 200px;
+    width: 316px;
+    left: 0;
 }
 
 .field0:focus ~ .l2 {
-    width: 200px;
+    width: 316px;
+    left: 0;
 }
 
 .line {
     content: "";
     position: absolute;
+    left: 158px;
     width: 0;
     height: 2px;
-    border-color: #D00;
-    transition: width 0.75s;
+    background-color: #D00;
+    transition: width 0.55s,left 0.55s;
     z-index: 30;
 }
 
 .l1 {
     margin-left: 41px;
-    top: 200px;
+    top: 202px;
 }   
 
 .l2 {
     margin-left: 41px;
-    top: 300px;
+    top: 316px;
 }
 
 .btn-sbm {
