@@ -46,8 +46,10 @@ function saveList()
 }
 function clearList()
 {
+    if (confirm("Удалить сохранение ?")){
     localStorage.removeItem("List");
     alert("Удалено!");
+    }
 }
 function loadList()
 {
