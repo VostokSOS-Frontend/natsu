@@ -15,10 +15,26 @@ function random(num) {
     if (numb == 0) { return(1)}
     else {return(numb)};
 }
+function sum(array) {
+    let sum =[];
+    for(let i=0;i<array.length;i++){
+        sum += array[i];
+    }
+    return(sum);
+}
+function addition() {
+    let array = [];
+    let valuE = document.getElementById(" textIn ").value;
+    valuE = +valuE;
+    if (!isNaN(valuE)){
+    array.push(valuE);
+    let HO = "["+array+"]";
+    document.getElementById(" ARR ").innerHTML=HO;
+    document.getElementById(" RES ").innerHTML=sum(array);
+    }
+    document.getElementById(" textIn ").value="";
+}
 function first() {
-
-
-
     let htmlOut = "";
     let goods = [];
     let k = random(100);
@@ -65,8 +81,8 @@ function first() {
 
     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Создайте калькулятор для введённых значений</span><br>важность: 4<br><br>Напишите код, который:<ul><li> Запрашивает по очереди значения и сохраняет их в массиве. </li><li> Заканчивает ввод, как только посетитель введёт пустую строку, не число или нажмёт «Отмена». </li><li> При этом ноль <span style=\" background-color: #BBB; \">0</span> не должен заканчивать ввод, это разрешённое число. </li><li> Выводит сумму всех значений массива </li></ul>"
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
-    htmlOut += "<input type=\"text\" id=\" textIn \"><button onclick=\" addition() \" type=\" button \">+</button><button onclick=\" calc() \" type=\" button \">=</button>";
-    htmlOut += "<div><span id=\" ARR \"></span><br><span id=\" RES \"></span></div> Это д***** у меня не получилось";
+    htmlOut += "<input type=\"text\" id=\" textIn \"> <button onclick=\" addition() \" type=\" button \">+</button>";
+    htmlOut += "<div><span id=\" ARR \"></span><br><span id=\" RES \"></span></div>";
     htmlOut += "</div></div>";
 
 
@@ -79,9 +95,21 @@ function first() {
     htmlOut += "<br>"+find(arr, 2);
     htmlOut += "<br>"+find(arr, 1.5);
     htmlOut += "<br><br>"+find(arr, 0);
+    htmlOut += "</div></div>";
 
 
 
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Фильтр диапазона</span><br>важность: 3<br><br>Создайте функцию, которая принимает массив чисел и возвращает новый массив, который содержит только числа из диапазона от a до b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. Функция не должна менять массив."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    let arra = [5, 4, 3, 8, 0];
+    htmlOut += "["+arra+"]";
+    htmlOut += "<br>"+"filterRange(array,3,5)";
+    let filtered = filterRange(arra,3,5);
+    htmlOut += "<br>"+filtered;
+    htmlOut += "</div></div>";
+
+
+    
     document.getElementById("main").innerHTML=htmlOut;
 }
 function find(array, target) {
@@ -93,8 +121,39 @@ function find(array, target) {
         else if (i==array.length-1) {return(-1)};
     }
 }
+function filterRange(array,a,b) {
+    let rrr = [];
+    if (a > b){
+        let c = a;
+        a = b;
+        b = c;
+    }
+    for (let i = 0; i <= array.length;i++){
+        for(let j = a;j <= b;j++){
+            if (array[i] == j) {
+                rrr.push(array[i]);
+            }
+        }
+    }
+    return(rrr);
+}
+
 function second() {
-    let htmlOut = "Ещё не сделал";
+    let htmlOut = "";
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Given an array of integers, return a new array with each value doubled.</span>"
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    let array = [];
+    let aRray = [];
+    k = random(5);
+    for (let i = 0;i < k;i++){
+        array[i] = random(10);
+    }
+    htmlOut += "["+array+"]";
+    for (let i = 0;i < k;i++){
+        aRray[i] = array[i] * 2;
+    }
+    htmlOut += "<br>["+aRray+"]";
+
     document.getElementById("main").innerHTML=htmlOut;
 }
 function third() {
