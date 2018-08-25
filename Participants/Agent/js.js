@@ -79,7 +79,7 @@ function first() {
 
 
 
-    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Создайте калькулятор для введённых значений</span><br>важность: 4<br><br>Напишите код, который:<ul><li> Запрашивает по очереди значения и сохраняет их в массиве. </li><li> Заканчивает ввод, как только посетитель введёт пустую строку, не число или нажмёт «Отмена». </li><li> При этом ноль <span style=\" background-color: #BBB; \">0</span> не должен заканчивать ввод, это разрешённое число. </li><li> Выводит сумму всех значений массива </li></ul>"
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Создайте калькулятор для введённых значений</span><br>важность: 4<br><br>Напишите код, который:<ul><li> Запрашивает по очереди значения и сохраняет их в массиве. </li><li> Выводит сумму всех значений массива </li></ul>";
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     htmlOut += "<input type=\"text\" id=\" textIn \"> <button onclick=\" addition() \" type=\" button \">+</button>";
     htmlOut += "<div><span id=\" ARR \"></span><br><span id=\" RES \"></span></div>";
@@ -87,7 +87,7 @@ function first() {
 
 
 
-    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Поиск в массиве</span><br>важность: 3<br><br>Создайте функцию, которая ищет в массиве значение и возвращает его номер, если найдено, или -1, если не найдено."
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Поиск в массиве</span><br>важность: 3<br><br>Создайте функцию, которая ищет в массиве значение и возвращает его номер, если найдено, или -1, если не найдено.";
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     let arr = ["test", 2, 1.5, false];
     htmlOut += "["+arr+"]";
