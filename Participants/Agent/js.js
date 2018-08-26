@@ -75,7 +75,7 @@ function first() {
     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Получить случайное значение из массива</span><br>важность: 3<br><br>Напишите код для вывода случайного значения из массива";
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     let array = ["Яблоко", "Апельсин", "Груша", "Лимон"];
-    htmlOut += array +"<br>Случайное значение: "+array[random(array.length)];
+    htmlOut += array +"<br>Случайное значение: "+array[random(array.length)-1];
     htmlOut += "</div></div>";
 
 
@@ -145,15 +145,77 @@ function second() {
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     let array = [];
     let aRray = [];
-    k = random(5);
+    k = random(5) + 3;
     for (let i = 0;i < k;i++){ array[i] = random(10); }
     htmlOut += "["+array+"]";
     for (let i = 0;i < k;i++){ aRray[i] = array[i] * 2; }
     htmlOut += "<br>["+aRray+"]";
+    htmlOut += "</div></div>";
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">You get an array of numbers, return the sum of all of the positives ones.</span>"
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = [];
+    let Sum = 0;
+    k = random(5) + 2;
+    for (let i = 0;i < k;i++){ array[i] = random(10) - 5; }
+    htmlOut += "["+array+"]";
+    for (let i = 0;i < k;i++){ if(array[i] > 0){Sum += array[i]}  }
+    htmlOut += "<br>"+Sum;
+    htmlOut += "</div></div>";
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.</span>"
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = [];
+    aRray = [];
+    k = random(5) + 4;
+    for (let i = 0;i < k;i++){ array[i] = random(10); }
+    htmlOut += "["+array+"]";
+    for (let i = 0;i < k;i++){if(array[i] < 5){aRray[i] = 0}else{aRray[i] = 1}  }
+    htmlOut += "<br>["+aRray+"]";
+    htmlOut += "</div></div>";
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.</span><br><br>The output should be two capital letters with a dot seperating them."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = ["Sam Harris","Patrick Feeney"];
+    htmlOut +=array[0]+"=>"+convert(array[0]);
+    htmlOut +="<br>"+array[1]+"=>"+convert(array[1]);
+    htmlOut += "</div></div>";
+
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Return the average of the given array rounded down to its nearest integer.</span><br><br>The array will never be empty."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = [];
+    Sum = 0;
+    let Avr = 0;
+    k = random(5) + 2;
+    for (let i = 0;i < k;i++){ array[i] = random(13) * 0.98; }
+    htmlOut += "["+array+"]";
+    for (let i = 0;i < k;i++){ array[i] = Math.floor(array[i]); Sum += array[i] }
+    Avr = Math.floor(Sum / array.length);
+    htmlOut += "<br>Avergage: "+Avr;
+    htmlOut += "</div></div>";
+
+
+
 
     document.getElementById("main").innerHTML=htmlOut;
 }
+function convert(full) {
+    let Names = full.split(" ");
+    let FirstName = Names[0].split("");
+    let SecondName = Names[1].split("");
+    let result =FirstName[0]+"."+SecondName[0]; 
+    return(result);
+}
 function third() {
-    let htmlOut = "Ещё не сделал";
+    let htmlOut = "<div style=\" position: absolute; font-size: 50px; color: #F00; right: 10%; top: 20%; margin-left: -192px; border: 3px solid; border-radius: 10px; padding: 15px; border-color: #E00; transform: rotate(15deg); \">Ещё не сделал</div>";
     document.getElementById("main").innerHTML=htmlOut;
 }
