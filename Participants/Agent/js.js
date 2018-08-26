@@ -10,20 +10,21 @@ break;
 default: alert("Нету такого >=[");
 break;
 }
+let RES = [];
+addition(RES);
 function random(num) {
     let numb = Math.round(Math.random()*num);
     if (numb == 0) { return(1)}
     else {return(numb)};
 }
 function sum(array) {
-    let sum =[];
+    let sum = 0;
     for(let i=0;i<array.length;i++){
         sum += array[i];
     }
     return(sum);
 }
-function addition() {
-    let array = [];
+function addition(array) {
     let valuE = document.getElementById(" textIn ").value;
     valuE = +valuE;
     if (!isNaN(valuE)){
@@ -81,7 +82,7 @@ function first() {
 
     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Создайте калькулятор для введённых значений</span><br>важность: 4<br><br>Напишите код, который:<ul><li> Запрашивает по очереди значения и сохраняет их в массиве. </li><li> Выводит сумму всех значений массива </li></ul>";
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
-    htmlOut += "<input type=\"text\" id=\" textIn \"> <button onclick=\" addition() \" type=\" button \">+</button>";
+    htmlOut += "<input type=\"text\" id=\" textIn \"> <button onclick=\" addition(RES) \" type=\" button \">+</button>";
     htmlOut += "<div><span id=\" ARR \"></span><br><span id=\" RES \"></span></div>";
     htmlOut += "</div></div>";
 
@@ -145,13 +146,9 @@ function second() {
     let array = [];
     let aRray = [];
     k = random(5);
-    for (let i = 0;i < k;i++){
-        array[i] = random(10);
-    }
+    for (let i = 0;i < k;i++){ array[i] = random(10); }
     htmlOut += "["+array+"]";
-    for (let i = 0;i < k;i++){
-        aRray[i] = array[i] * 2;
-    }
+    for (let i = 0;i < k;i++){ aRray[i] = array[i] * 2; }
     htmlOut += "<br>["+aRray+"]";
 
     document.getElementById("main").innerHTML=htmlOut;
