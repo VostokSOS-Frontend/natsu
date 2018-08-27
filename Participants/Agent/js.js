@@ -26,13 +26,14 @@ function sum(array) {
 }
 function addition(array) {
     let valuE = document.getElementById(" textIn ").value;
+    if(valuE){
     valuE = +valuE;
     if (!isNaN(valuE)){
     array.push(valuE);
     let HO = "["+array+"]";
     document.getElementById(" ARR ").innerHTML=HO;
     document.getElementById(" RES ").innerHTML=sum(array);
-    }
+    }}
     document.getElementById(" textIn ").value="";
 }
 function first() {
