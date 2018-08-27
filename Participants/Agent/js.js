@@ -36,6 +36,17 @@ function addition(array) {
     }}
     document.getElementById(" textIn ").value="";
 }
+function camelize(str) {
+    let STR = "";
+    for (let i = 0; i < str.length; i++){
+        if (str[i] === "-"){
+            STR += str[i+1].toUpperCase();
+            i++;
+        }
+        else {STR += str[i]}
+    }
+    return(STR);
+}
 function first() {
     let htmlOut = "";
     let goods = [];
@@ -111,7 +122,16 @@ function first() {
     htmlOut += "</div></div>";
 
 
-    
+
+     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Перевести текст вида border-left-width в borderLeftWidth</span><br>важность: 3<br><br>Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».<br><br>То есть, дефисы удаляются, а все слова после них получают заглавную букву."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    htmlOut += "camelize(\"background-color\") == "+camelize("background-color");
+    htmlOut += "<br>camelize(\"list-style-image\") == "+camelize("list-style-image");
+    htmlOut += "<br>camelize(\"-webkit-transition\") == "+camelize("-webkit-transition");
+    htmlOut += "</div></div>";
+
+
+
     document.getElementById("main").innerHTML=htmlOut;
 }
 function find(array, target) {
