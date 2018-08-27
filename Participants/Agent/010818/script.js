@@ -41,7 +41,8 @@ function clearText()
 }
 function saveList()
 {
-    localStorage.setItem("List",List);
+    let ListJoin = List.join("§");
+    localStorage.setItem("List",ListJoin);
     alert("Сохранено!");
 }
 function clearList()
@@ -54,21 +55,7 @@ function clearList()
 function loadList()
 {
     let chars = localStorage.getItem("List");
-    let j = 0;
-    for (let i = 0; i < chars.length; i++)
-    {
-        if(chars[i] != ","){
-            if(List[j] == undefined)
-            {
-                List[j] = chars[i];
-            }
-            else 
-            {
-                List[j] += chars[i];
-            }
-        }
-        else {j++}
-    }
+    List = chars.split("§");
     alert("Сохранение загружено!");
     readList();
 }
