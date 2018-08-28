@@ -102,32 +102,42 @@ function first() {
 
     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Поиск в массиве</span><br>важность: 3<br><br>Создайте функцию, которая ищет в массиве значение и возвращает его номер, если найдено, или -1, если не найдено.";
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
-    let arr = ["test", 2, 1.5, false];
-    htmlOut += "["+arr+"]";
-    htmlOut += "<br>"+find(arr, "test");
-    htmlOut += "<br>"+find(arr, 2);
-    htmlOut += "<br>"+find(arr, 1.5);
-    htmlOut += "<br><br>"+find(arr, 0);
+    array = ["test", 2, 1.5, false];
+    htmlOut += "["+array+"]";
+    htmlOut += "<br>"+find(array, "test");
+    htmlOut += "<br>"+find(array, 2);
+    htmlOut += "<br>"+find(array, 1.5);
+    htmlOut += "<br><br>"+find(array, 0);
     htmlOut += "</div></div>";
 
 
 
     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Фильтр диапазона</span><br>важность: 3<br><br>Создайте функцию, которая принимает массив чисел и возвращает новый массив, который содержит только числа из диапазона от a до b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. Функция не должна менять массив."
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
-    let arra = [5, 4, 3, 8, 0];
-    htmlOut += "["+arra+"]";
+    array = [5, 4, 3, 8, 0];
+    htmlOut += "["+array+"]";
     htmlOut += "<br>"+"filterRange(array,3,5)";
-    let filtered = filterRange(arra,3,5);
+    let filtered = filterRange(array,3,5);
     htmlOut += "<br>"+filtered;
     htmlOut += "</div></div>";
 
 
 
-     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Перевести текст вида border-left-width в borderLeftWidth</span><br>важность: 3<br><br>Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».<br><br>То есть, дефисы удаляются, а все слова после них получают заглавную букву."
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Перевести текст вида border-left-width в borderLeftWidth</span><br>важность: 3<br><br>Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».<br><br>То есть, дефисы удаляются, а все слова после них получают заглавную букву."
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     htmlOut += "camelize(\"background-color\") == "+camelize("background-color");
     htmlOut += "<br>camelize(\"list-style-image\") == "+camelize("list-style-image");
     htmlOut += "<br>camelize(\"-webkit-transition\") == "+camelize("-webkit-transition");
+    htmlOut += "</div></div>";
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Фильтрация массива \"на месте\"</span><br>важность: 4<br><br>Создайте функцию filterRangeInPlace(arr, a, b), которая получает массив с числами arr и удаляет из него все числа вне диапазона a..b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. <br><br>Функция должна менять сам массив и ничего не возвращать."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = [5, 3, 8, 1];
+    htmlOut += "["+array+"]<br>filterRangeInPlace(array,1,4);";
+    filterRangeInPlace(array,1,4)
+    htmlOut += "<br>["+array+"]";
     htmlOut += "</div></div>";
 
 
@@ -159,7 +169,21 @@ function filterRange(array,a,b) {
     }
     return(rrr);
 }
-
+function filterRangeInPlace(array, a, b){
+    let rrr = [];
+    if (a > b){
+        let c = a;
+        a = b;
+        b = c;
+    }
+    for (let i = 0; i <= array.length;i++){
+        for(let j = a;j <= b;j++){
+            if (j == b && array[i] != j){
+                array.splice(i,1);
+            }
+        }
+    }
+}
 function second() {
     let htmlOut = "";
     htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Given an array of integers, return a new array with each value doubled.</span>"
