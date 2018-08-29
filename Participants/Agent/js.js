@@ -104,10 +104,10 @@ function first() {
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     array = ["test", 2, 1.5, false];
     htmlOut += "["+array+"]";
-    htmlOut += "<br>"+find(array, "test");
-    htmlOut += "<br>"+find(array, 2);
-    htmlOut += "<br>"+find(array, 1.5);
-    htmlOut += "<br><br>"+find(array, 0);
+    htmlOut += "<br>find(array, \"test\")=>"+find(array, "test");
+    htmlOut += "<br>find(array, 2)=>"+find(array, 2);
+    htmlOut += "<br>find(array, 1.5)=>"+find(array, 1.5);
+    htmlOut += "<br><br>find(array, 0)=>"+find(array, 0);
     htmlOut += "</div></div>";
 
 
@@ -123,7 +123,7 @@ function first() {
 
 
 
-    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Перевести текст вида border-left-width в borderLeftWidth</span><br>важность: 3<br><br>Напишите функцию camelize(str), которая преобразует строки вида «my-short-string» в «myShortString».<br><br>То есть, дефисы удаляются, а все слова после них получают заглавную букву."
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Перевести текст вида border-left-width в borderLeftWidth</span><br>важность: 3<br><br>Напишите функцию <span style=\" background-color: #BBB; \">camelize(str)</span>, которая преобразует строки вида «my-short-string» в «myShortString».<br><br>То есть, дефисы удаляются, а все слова после них получают заглавную букву."
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     htmlOut += "camelize(\"background-color\") == "+camelize("background-color");
     htmlOut += "<br>camelize(\"list-style-image\") == "+camelize("list-style-image");
@@ -132,12 +132,30 @@ function first() {
 
 
 
-    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Фильтрация массива \"на месте\"</span><br>важность: 4<br><br>Создайте функцию filterRangeInPlace(arr, a, b), которая получает массив с числами arr и удаляет из него все числа вне диапазона a..b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. <br><br>Функция должна менять сам массив и ничего не возвращать."
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Фильтрация массива \"на месте\"</span><br>важность: 4<br><br>Создайте функцию <span style=\" background-color: #BBB; \">filterRangeInPlace(arr, a, b)</span>, которая получает массив с числами arr и удаляет из него все числа вне диапазона a..b. То есть, проверка имеет вид a ≤ arr[i] ≤ b. <br><br>Функция должна менять сам массив и ничего не возвращать."
     htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
     array = [5, 3, 8, 1];
     htmlOut += "["+array+"]<br>filterRangeInPlace(array,1,4);";
     filterRangeInPlace(array,1,4)
     htmlOut += "<br>["+array+"]";
+    htmlOut += "</div></div>";
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Оставить уникальные элементы массива</span><br>важность: 3<br><br>Пусть <span style=\" background-color: #BBB; \">arr</span> – массив строк.<br><br>Напишите функцию <span style=\" background-color: #BBB; \">unique(arr)</span>, которая возвращает массив, содержащий только уникальные элементы <span style=\" background-color: #BBB; \">arr</span>."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = ["кришна", "кришна", "харе", "харе","харе", "харе", "кришна", "кришна", "8-()"];
+    htmlOut += "["+array+"]";
+    htmlOut += "<br>["+unique(array)+"]";
+    htmlOut += "</div></div>";
+
+
+
+    htmlOut += "<div style=\" background-color: #CCC; border-radius: 5px; padding: 15px; margin: 3%; font-size: 18px; \"><span style=\" font-size:24px; font-weight: bold; \">Перепишите цикл через map</span><br>важность: 5<br><br>Код ниже получает из массива строк новый массив, содержащий их длины:<br>var arr = [\"Есть\", \"жизнь\", \"на\", \"Марсе\"];<span style=\" background-color: #BBB; \"><br>var arrLength = [];<br>for (var i = 0; i < arr.length; i++) {<br>  arrLength[i] = arr[i].length;<br>}</span><br>alert( arrLength ); // 4,5,2,5<br>Перепишите выделенный участок: уберите цикл, используйте вместо него метод map."
+    htmlOut += "<div style=\" padding: 20px; margin: 2%; background-color: #AAA; border-radius: 20px;\">";
+    array = ["Есть", "жизнь", "на", "Марсе"];
+    let arrayLength = array.map(function(element) {return element.length});
+    htmlOut += "["+array+"]<br><br>"+arrayLength+"<br><br>arrayLength = array.map(function(element) {return element.length});";
     htmlOut += "</div></div>";
 
 
@@ -183,6 +201,21 @@ function filterRangeInPlace(array, a, b){
             }
         }
     }
+}
+function unique(arr){
+    let array = [""];
+    for (let i = 0;i < arr.length;i++){
+        for (let j = 0; j < array.length;j++){
+            if (arr[i] != array[j] && j == array.length-1){
+                if (array[0]==""){array.splice(0,1);}
+                array.push(arr[i]);
+            }
+            else if (arr[i] == array[j]){
+                break;
+            }
+        }
+    }
+    return(array);
 }
 function second() {
     let htmlOut = "";
