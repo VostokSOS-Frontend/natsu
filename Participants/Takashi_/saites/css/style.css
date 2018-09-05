@@ -1,0 +1,191 @@
+@font-face{
+    font-family: calibri;
+    src: url(../fonts/shrift.ttf);
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: calibri;
+    min-width: 1519px;
+}
+
+button{
+    border: 0;
+    padding-bottom: 30px;
+}
+
+a>img{
+    height: 25px;
+}
+ 
+ul{
+    text-align: center;
+    margin-top: -60px;
+    margin-left: 11px;
+   
+ }
+  
+li{
+    display: inline;
+    margin-right: 53px;
+  }
+  
+  a{
+    text-decoration:none;
+    color: red;
+  }
+  
+  .account{
+    text-align: right;
+    padding-right: 30px;
+    
+    }
+
+    .logo{
+        padding-left: 32px;
+       }
+
+.banner{  
+    margin-top: 23px;  
+    height: 646px; 
+    background-size: 100% 642px;
+    background-image: url('../img/banner.png');
+    background-repeat: no-repeat;
+    position: relative;
+}  
+
+.circles{
+    position: absolute;
+    top: 35.6%;
+    width: 13.2px;
+    margin-left: 53px;
+}
+
+.layer{
+    position: absolute;
+    top: 39.3%;
+    width: 39.2px;
+    margin-left: 40px;
+}
+
+.James{
+    position: absolute;
+    top: 36.7%;
+    width: 39.2px;
+    margin-left: 96px;
+    font-size: 1.2rem;
+    color: white;
+    letter-spacing: -1px;
+}
+
+.published{
+    color: white;
+    position: absolute;
+    top: 88.6%;
+    left: 2.2%;
+    font-size: 1.27rem;
+    letter-spacing: -1.68px;
+}
+
+.updated{
+    color: white;
+    position: absolute;
+    top: 88.6%;
+    left: 17.9%;
+    font-size: 1.257rem;
+    letter-spacing: -1.68px;
+}
+
+.rating{
+    width: 300px;
+    color: white;
+    position: absolute;
+    top: 88.6%;
+    left: 32.9%;
+    font-size: 1.25rem;
+    letter-spacing: -1.68px;
+    background-size: 188px;
+    background-position-x: 1.99999999998px;
+    background-position-y: 10.5px;
+    background-image: url(../img/ratting.png);
+    background-repeat: no-repeat;
+}
+
+.like{
+    width: 185px;
+    color: white;
+    position: absolute;
+    top: 88.6%;
+    left: 81.5%;
+    font-size: 1.25rem;
+    background-size: 280px;
+    background-position-x: -42px;
+    background-position-y: 9px;
+    background-image: url(../img/moviestatus.png);
+    background-repeat: no-repeat;
+}
+
+.comment{
+    color: white;
+    position: absolute;
+    top: 88.6%;
+    left: 89%;
+    font-size: 1.25rem;
+}
+
+.download{
+    color: white;
+    position: absolute;
+    top: 88.6%;
+    left: 94.9%;
+    font-size: 1.25rem;
+}
+
+  
+  .elementhover {
+    font-family: calibri;
+    width: 152px;
+    height: 49px;
+    position: absolute;
+    top: 58%;
+    left: 74%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: red;
+    border-radius: 4px;
+  }
+  
+  .elementhover {
+    cursor: pointer;
+    
+    transition: box-shadow 600ms cubic-bezier(.33,.11,.02,.99),
+                transform  600ms cubic-bezier(.33,.11,.02,.99);}
+    
+    .elementhover:hover {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 32px 32px rgba(0, 0, 0, .15), 
+                 8px 64px 64px rgba(0, 0, 0, .15); 
+  
+      transform: scale(1.05)
+                 translateY(-0.5rem);
+    }
+    
+    
+    .elementhover:active {
+     box-shadow: 0 4px  4px  rgba(0, 0, 0, .1),
+                 0 1px  6px  rgba(0, 0, 0, .05),
+                 0 8px  8px  rgba(0, 0, 0, .1), 
+                 0 16px 16px rgba(0, 0, 0, .1), 
+                 8px 16px 16px rgba(0, 0, 0, .15), 
+                 8px 32px 32px rgba(0, 0, 0, .15); 
+    }
+
+    .WATCH{
+        margin-top: 1px;
+        letter-spacing: -1.68px;
+    }
