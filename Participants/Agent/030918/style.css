@@ -1,14 +1,129 @@
 body {
     background: url("./img/background/bg.png");
+    margin: 0;
+    padding: 0;
 }
+@font-face {
+    font-family: AdobeGothicStd-Bold;
+    src: url("./fonts/AdobeGothicStd-Bold.otf");
+   }
 .nav1 {
     background:#FFF;
     border-radius: 5px 5px 0 0 ;
-    width: 80%;
-    margin: 10%;
+    width: 1194px;
+    margin-top: 5%;
+    margin-left: calc(50% - 1194px / 2);
     height: 76px;
 }
 .nav1::before {
     background: url("./img/logo.png");
     content: "";
+}
+.header {
+    position: relative;
+    width: 1194px;
+    height: 500px;
+    background: url("./img/header/banner.png") no-repeat;
+    margin: 0 calc(50% - 1194px / 2);
+}    
+.header .text{
+    position: absolute;
+    bottom: 14px;
+    cursor: default;
+}
+.header h2 {
+    display: inline;
+    margin-left: 30px;
+    font-family: AdobeGothicStd-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+red {
+
+    color: #d8232a;
+}
+.header .ratting {
+    display: inline-block;
+    margin-left: 15px;
+    background: url("./img/header/ratting.png");
+    width: 86px;
+    height: 14px;
+}
+.header .watch_now {
+    border: none;
+    padding: 3px 15px;
+    font-family: AdobeGothicStd-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #d8232a;
+    position: absolute;
+    right: -426px;
+    bottom: 160px;
+    transition: padding 0.75s, right 0.75s, bottom 0.75s, box-shadow 0.5s;
+}
+.header .watch_now:hover {
+    transition: padding 0.75s, right 0.75s, bottom 0.75s, box-shadow 0.5s;
+    padding: 5px 17px;
+    right: -402px;
+    bottom: 152px;
+    box-shadow: #000 0 0 12px,#000 0 -5px 7px;
+    cursor: pointer;
+}
+.header .watch_now:active {
+    background-color: #bb080e;
+    color: #AAA;
+}
+.header .movie_status {
+    font-family: AdobeGothicStd-Bold;
+    position: absolute;
+    bottom: 14px;
+    right: 45px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: default;
+}
+.like {
+    position: relative;
+}
+.like::before {
+    position: absolute;
+    left: -20px;
+    content: "";
+    display: block;
+    width:15px;
+    height:15px;
+    background: url("./img/header/movie\ status.png");
+}
+.comment {
+    position: relative;
+}
+.comment::before {
+    position: absolute;
+    left: -20px;
+    content: "";
+    display: block;
+    width:15px;
+    height:15px;
+    background: url("./img/header/movie\ status.png");
+    background-position: 118px;
+}
+.downloads {
+    position: relative;
+}
+.downloads::before {
+    position: absolute;
+    left: -20px;
+    content: "";
+    display: block;
+    width:15px;
+    height:15px;
+    background: url("./img/header/movie\ status.png");
+    background-position: 52px;
+}
+.margin {
+    margin-left: 40px;
 }
