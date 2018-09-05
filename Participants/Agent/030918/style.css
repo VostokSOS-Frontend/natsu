@@ -67,7 +67,7 @@ red {
 .header .watch_now:hover {
     transition: padding 0.75s, right 0.75s, bottom 0.75s, box-shadow 0.5s;
     padding: 5px 17px;
-    right: -402px;
+    right: -426px;
     bottom: 152px;
     box-shadow: #000 0 0 12px,#000 0 -5px 7px;
     cursor: pointer;
