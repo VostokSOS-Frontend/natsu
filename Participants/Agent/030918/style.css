@@ -193,6 +193,7 @@ body {
 .comment::before {
     position: absolute;
     left: -24.5px;
+    top: -1px;
     content: "";
     display: block;
     width:15px;
@@ -206,6 +207,7 @@ body {
 .downloads::before {
     position: absolute;
     left: -28px;
+    top: -1px;
     content: "";
     display: block;
     width:15px;
