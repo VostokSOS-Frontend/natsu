@@ -53,10 +53,10 @@ function clearList()
 }
 function loadList()
 {
-    let chars = localStorage.getItem("List");
-    let j = 0;
-    for (let i = 0; i < chars.length; i++)
-    {
+    List = chars.split("§");
+    alert("Сохранение загружено!");
+    readList();
+}
         if(chars[i] != ","){
             if(List[j] == undefined)
             {
