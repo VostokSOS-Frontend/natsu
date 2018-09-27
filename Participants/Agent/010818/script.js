@@ -59,3 +59,9 @@ function loadList()
     alert("Сохранение загружено!");
     readList();
 }
+function test(num) {
+    alert("test "+num);
+}
+function refresh() {
+    readList();
+}
