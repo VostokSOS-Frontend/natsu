@@ -16,7 +16,9 @@ list.forEach(function(element) {
     document.write("<p>"+i+"]"+element+"</p>");
 });
 */
+let Name = "";
 let List=[];
+
 function readList()
 {
     let htmlOut = "<ul>";
@@ -27,8 +29,10 @@ function readList()
 function writeList()
 {
     let message = document.getElementById("text").value;
+    if (message){
     List.push(message);
     readList();
+    }
 }
 function removeList(index)
 {
@@ -41,34 +45,37 @@ function clearText()
 }
 function saveList()
 {
-    localStorage.setItem("List",List);
+    let ListJoin = List.join("§");
+    localStorage.setItem(Name,ListJoin);
     alert("Сохранено!");
 }
 function clearList()
 {
     if (confirm("Удалить сохранение ?")){
-    localStorage.removeItem("List");
+    localStorage.removeItem(Name);
     alert("Удалено!");
     }
 }
-function loadList()
+function loadList(atr)
 {
+    let chars = localStorage.getItem(Name);
+    if( !chars){
+        List = [];
+        alert("Сохранения нет.");
+    }
+    else {
     List = chars.split("§");
+    if(!atr){
     alert("Сохранение загружено!");
+    }
+    readList();
+    }
+}
+function refresh() {
+    loadList(1);
     readList();
 }
-        if(chars[i] != ","){
-            if(List[j] == undefined)
-            {
-                List[j] = chars[i];
-            }
-            else 
-            {
-                List[j] += chars[i];
-            }
-        }
-        else {j++}
-    }
-    alert("Сохранение загружено!");
-    readList();
+function setName(name) {
+    Name = name;
+    refresh();
 }
