@@ -12,14 +12,13 @@
                 <input style="margin:20px; width: 60% ;" type="text" id="text"><input onclick="writeList(),clearText()" type="button" value="Добавить">
                 <button type="button" style="margin-left: 20px;" onClick="saveList()">Сохранить</button>
                 <button type="button" onClick="clearList()" style="margin-left: 5px">Очистить</button>
-                <select id="select-save-name" style="width: 100px; margin-left: 20px;">
-                    <option onClick="setName('First')">First</option>
-                    <option onClick="setName('Second')">Second</option>
-                    <option onClick="setName('Third')">Third</option>
-                    <option onClick="setName('Forth')">Forth</option>
-                    <option onClick="setName('List')">Old</option>
+                <select style="width: 100px; margin-left: 20px;">
+                    <option onClick="test(1)">1</option>
+                    <option onClick="test(2)">2</option>
+                    <option onClick="test(3)">3</option>
+                    <option onClick="test(4)">4</option>
                 </select>
-                <button type="button" onClick="refresh()" style="margin: 0; padding: 0; line-height: 10px; position: relative; top: 5px;;"><img style="width: 24px; height: 24px;" src="https://www.kuchadrov.ru/uploads/posts/2011-11/1321276683_update.png"></button> 
+                <button type="button" onClick="refresh()" style="margin: 0; padding: 0; line-height: 10px; position: relative; top: 5px;;"><img style="width: 24px; height: 24px;" src="https://www.kuchadrov.ru/uploads/posts/2011-11/1321276683_update.png"></button>
             </span>
         </form>
         <div id="list"></div>

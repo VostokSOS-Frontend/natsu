@@ -1,0 +1,250 @@
+body {
+    background: url("./img/background/bg.png");
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: AdobeGothicStd-Bold;
+    src: url("./fonts/AdobeGothicStd-Bold.otf");
+}
+@font-face {
+    font-family: Calibrii;
+    src: url("./fonts/calibriz.ttf");
+}
+.nav1 {
+    background:#FFF;
+    border-radius: 5px 5px 0 0 ;
+    width: 1194px;
+    margin-top: 5%;
+    margin-left: calc(50% - 1194px / 2);
+    height: 76px;
+}
+.nav1 .logo {
+    position: relative;
+    left: 30px;
+    top: 14px;
+}
+.nav1 .buttons {
+    position: relative;
+    top: 16px;
+}
+.nav1 .buttons .ico{
+    margin-left: 305px;
+}
+.nav1 .buttons .icon {
+    margin-left: 43px;
+}
+.nav1 .ico {
+    margin-left: 280px;
+    position: relative;
+    top: 1px;
+    background: url("./img/topPanel/comics.png");
+    display: inline-block;
+    width: 19px;
+    height: 21px;
+}
+.nav1 .icon.move {
+    position: relative;
+    bottom: 1px;
+    background: url("./img/topPanel/movie\ icon.png");
+    display: inline-block;
+    width: 22px;
+    height: 17px;
+}
+.nav1 .icon.move::after {
+    content: url("./img/topPanel/movie\ text\ hover.png");
+    display: inline-block;
+    width: 66px;
+    height: 27px;
+    position: absolute;
+    right: -22px;
+    top: 38px;
+    z-index: 5;
+}
+.nav1 .icon.video {
+    position: relative;
+    top: 1px;
+    right: 1px;
+    background: url("./img/topPanel/video_1.png");
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.nav1 .icon.video:hover {
+    background-position: 20px 0;
+}
+.nav1 .icon.game {
+    position: relative;
+    bottom: 1px;
+    right: 5px;
+    background: url("./img/topPanel/game.png");
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+}
+.nav1 .icon.tv {
+    position: relative;
+    right: 7px;
+    top: 1px;
+    background: url("./img/topPanel/tv.png");
+    display: inline-block;
+    width: 20px;
+    height: 19px;
+}
+.nav1 .icon.more {
+    position: relative;
+    right: 7px;
+    top: -1px;
+    background: url("./img/topPanel/more.png");
+    display: inline-block;
+    width: 18px;
+    height: 17px;
+}
+.nav1::before {
+    background: url("./img/logo.png");
+    content: "";
+}
+.header {
+    position: relative;
+    width: 1194px;
+    height: 500px;
+    background: url("./img/header/banner.png") no-repeat;
+    margin: 0 calc(50% - 1194px / 2);
+}    
+.header .text{
+    position: absolute;
+    bottom: 12px;
+    left: 2px;
+    cursor: default;
+}
+.header h2:first-child {
+    margin-left: 32px;
+}
+.header h2 {
+    display: inline;
+    margin-left: 17px;
+    font-family: Adobe Gothic Std;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.header .text red {
+    font-family: Calibri;
+    color: #d8232a;
+    font-size: 16px;
+}
+.header .rating {
+    display: inline-block;
+    margin-left: 15px;
+    background: url("./img/header/ratting.png");
+    width: 86px;
+    height: 14px;
+}
+.header .watch_now {
+    border: none;
+    padding: 4.5px 17px;
+    font-family: AdobeGothicStd-Bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #d8232a;
+    position: absolute;
+    right: -453px;
+    bottom: 155px;
+    transition: padding 0.75s, right 0.75s, bottom 0.75s, box-shadow 0.5s;
+}
+.header .watch_now:hover {
+    transition: padding 0.75s, right 0.75s, bottom 0.75s, box-shadow 0.5s;
+    right: -453px;
+    bottom: 164px;
+    box-shadow: #000 0 2px 12px,#000 0 5px 7px;
+    cursor: pointer;
+}
+.header .watch_now:active {
+    background-color: #bb080e;
+    color: #AAA;
+}
+.header .movie_status {
+    font-family: Adobe Gothic Std;
+    position: absolute;
+    bottom: 13px;
+    right: 36px;
+    font-size: 13.5px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: default;
+}
+.like {
+    position: relative;
+}
+.like::before {
+    position: absolute;
+    left: -30px;
+    content: "";
+    display: block;
+    width:15px;
+    height:15px;
+    background: url("./img/header/movie\ status.png");
+}
+.comment {
+    position: relative;
+}
+.comment::before {
+    position: absolute;
+    left: -24.5px;
+    top: -1px;
+    content: "";
+    display: block;
+    width:15px;
+    height:15px;
+    background: url("./img/header/movie\ status.png");
+    background-position: 118px;
+}
+.downloads {
+    position: relative;
+}
+.downloads::before {
+    position: absolute;
+    left: -28px;
+    top: -1px;
+    content: "";
+    display: block;
+    width:15px;
+    height:15px;
+    background: url("./img/header/movie\ status.png");
+    background-position: 52px;
+}
+.margin {
+    margin-left: 50px;
+}
+.user {
+    position: relative;
+    left: 225px;
+    top: 12.5px;
+    width: 100px;
+    cursor: default;
+}
+.user .name {
+    border: none;
+    text-decoration: none;
+    overflow: hidden;
+    font-size: 15px;
+    font-family: Adobe Gothic Std;
+}
+.user .avatar {
+    position: relative;
+    top: 10px;
+    right: 12px;
+}
+.user .edit {
+    position: relative;
+    cursor: pointer;
+    left: 17px;
+    top: 3px;
+}
+.header .select {
+    position: relative;
+    left: 30px;
+    top: 180px;
+}
