@@ -11,10 +11,20 @@ function addBigImageToElement (element) {
     bigImage.className = "img-big";
     bigImage.id = "img-big";
     bigImage.onclick = function () {
-        
+        const image = document.createElement("img");
+        const main = document.getElementById("slider");
+        image.id = "zoomImage";
+        image.src = document.getElementById("img-big").src;
+        image.className = "zoomedImage";
+        image.onclick = "removeImage(zoomImage)";
+        main.appendChild(image);
     }
     element.appendChild(bigImage);
 };
+function removeImage(id){
+    const element = documnet.getElementById(id);
+    document.removeChild(element);
+}
 function addSmallImageToElement (ImgObj,element) {
     const smallImage = document.createElement("img");
     smallImage.src = ImgObj.src;
@@ -34,25 +44,23 @@ function init() {
 function nextImg() {
     const image = document.getElementById("img-big");
     const src = image.src;
-    let index = img_array.findIndex(element => element == src);
+    let index = img_array.findIndex(element => element.src == src);
     if (index == img_array.length - 1) {
-        image.src = img_array[0];
+        image.src = img_array[0].src;
     }
     else {
-        image.src = img_array[index + 1];
+        image.src = img_array[index + 1].src;
     }
-    document.getElementById("img-big").src = src;
 }
 function prevImg() {
     const image = document.getElementById("img-big");
     const src = image.src;
-    let index = img_array.findIndex(element => element == src);
+    let index = img_array.findIndex(element => element.src == src);
     if (index == 0) {
-        image.src = img_array.length - 1;
+        image.src = img_array[img_array.length - 1].src;
     }
     else {
-        image.src = img_array[index - 1];
+        image.src = img_array[index - 1].src;
     }
-    document.getElementById("img-big").src = src;
 }
 init();
