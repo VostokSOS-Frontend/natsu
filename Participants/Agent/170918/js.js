@@ -31,4 +31,28 @@ function init() {
         addSmallImageToElement(imgObj, slider_element);
     });
 }
+function nextImg() {
+    const image = document.getElementById("img-big");
+    const src = image.src;
+    let index = img_array.findIndex(element => element == src);
+    if (index == img_array.length - 1) {
+        image.src = img_array[0];
+    }
+    else {
+        image.src = img_array[index + 1];
+    }
+    document.getElementById("img-big").src = src;
+}
+function prevImg() {
+    const image = document.getElementById("img-big");
+    const src = image.src;
+    let index = img_array.findIndex(element => element == src);
+    if (index == 0) {
+        image.src = img_array.length - 1;
+    }
+    else {
+        image.src = img_array[index - 1];
+    }
+    document.getElementById("img-big").src = src;
+}
 init();
