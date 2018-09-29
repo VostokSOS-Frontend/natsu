@@ -21,9 +21,9 @@ let List=[];
 
 function readList()
 {
-    let htmlOut = "<ul>";
-    List.forEach(function(element,index){htmlOut += "<li>" + element + "<button onclick=\"removeList("+index+")\">X</button>"+"</li>";});
-    htmlOut += "</ul>";
+    let htmlOut = "<ol style=\"margin: 5px; padding-left: 40px;\";>";
+    List.forEach(function(element,index){htmlOut += "<li style=\"margin: 4px;\">" + element + "<button onclick=\"removeList("+index+")\">X</button>"+"</li><hr style=\"margin: 0;\">";});
+    htmlOut += "</ol>";
     document.getElementById("list").innerHTML=htmlOut;
 }
 function writeList()

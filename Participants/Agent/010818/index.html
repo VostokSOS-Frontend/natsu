@@ -6,7 +6,7 @@
 </head>
 <body>
     <script src="./script.js"></script>
-    <div style="width: 90%; position: absolute; left: 5%; top: 5%; border-radius: 10px; border-color: #BBB; background-color: #EEE;">
+    <div style="width: 90%; position: absolute; left: 5%; top: 5%; border-radius: 10px; border-color: #BBB; background-color: #EEE; min-width: 1200px;">
         <form>
             <span>
                 <input style="margin:20px; width: 60% ;" type="text" id="text"><input onclick="writeList(),clearText()" type="button" value="Добавить">
@@ -22,7 +22,9 @@
                 <button type="button" onClick="refresh()" style="margin: 0; padding: 0; line-height: 10px; position: relative; top: 5px;;"><img style="width: 24px; height: 24px;" src="https://www.kuchadrov.ru/uploads/posts/2011-11/1321276683_update.png"></button> 
             </span>
         </form>
-        <div id="list"></div>
+        <div style="margin: 20px; border-radius: 5px; box-shadow: 0 0 5px #000, 3px 3px 7px #000; background:#E5E5E5; display: block; overflow: auto; max-height: 600px;">
+        <div style="padding-top:2px; " id="list"></div>
+        </div>
     </div>
     
 </body>
