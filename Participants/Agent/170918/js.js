@@ -12,19 +12,21 @@ function addBigImageToElement (element) {
     bigImage.id = "img-big";
     bigImage.onclick = function () {
         const image = document.createElement("img");
-        const main = document.getElementById("slider");
+        const main = document.createElement("div");
+        main.className = "main";
+        main.id = "main";
         image.id = "zoomImage";
         image.src = document.getElementById("img-big").src;
         image.className = "zoomedImage";
-        image.onclick = "removeImage(zoomImage)";
+        image.onclick = function(){
+            const element = document.getElementById("main");
+            element.remove();
+        }
         main.appendChild(image);
+        document.body.insertBefore(main,slider_element);
     }
     element.appendChild(bigImage);
 };
-function removeImage(id){
-    const element = documnet.getElementById(id);
-    document.removeChild(element);
-}
 function addSmallImageToElement (ImgObj,element) {
     const smallImage = document.createElement("img");
     smallImage.src = ImgObj.src;
@@ -35,10 +37,18 @@ function addSmallImageToElement (ImgObj,element) {
     };
     element.appendChild(smallImage);
 };
+function createScroll(element){
+    block = document.createElement("div");
+    block.className = "scroll";
+    block.id = "scroll";
+    element.appendChild(block);
+    return(block);
+}
 function init() {
     addBigImageToElement(slider_element);
+    const scroll = createScroll(slider_element);
     img_array.forEach(function(imgObj){
-        addSmallImageToElement(imgObj, slider_element);
+        addSmallImageToElement(imgObj, scroll);
     });
 }
 function nextImg() {
@@ -63,4 +73,12 @@ function prevImg() {
         image.src = img_array[index - 1].src;
     }
 }
+let position = 0;
+function scroll(move) {
+    position += move;
+    const scroll = document.getElementById("scroll");
+    const element = scroll.firstElementChild;
+    element.style = "margin-left: "+ position +";";
+}
+
 init();
