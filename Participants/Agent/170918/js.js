@@ -74,11 +74,11 @@ function prevImg() {
     }
 }
 let position = 0;
-function scroll(move) {
+function scrolling(move) {
     position += move;
     const scroll = document.getElementById("scroll");
-    const element = scroll.firstElementChild;
-    element.style = "margin-left: "+ position +";";
+    const element = scroll.firstChild;
+    element.style.marginLeft = position +"px";
 }
 
 init();
