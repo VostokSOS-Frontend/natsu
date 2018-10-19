@@ -78,12 +78,6 @@ function prevImg() {
 }
 let position = 0;
 function scrolling(move) {
-<<<<<<< HEAD
-    position += move;
-    const scroll = document.getElementById("scroll");
-    const element = scroll.firstChild;
-    element.style.marginLeft = position +"px";
-=======
     let test = position + move;
     const scroll = document.getElementById("scroll");
     const imgCoount = scroll.childElementCount;
@@ -93,7 +87,5 @@ function scrolling(move) {
     position += move;
     ScrollFirstChild.style.marginLeft =position +"px";
     }
->>>>>>> 9a59083bfaea3aba393ea09230f6b652b92fb613
 }
-
 init();

@@ -1,11 +1,15 @@
 "strict mode"
 
-let balance = 100;
-let numCount = 5;
-let winCombs = [
-    [0,1,2],[3,4,5],[6,7,8],[0,4,8],[6,4,2]
+let balance = 250;
+const winCombs = [[0,1,2],[3,4,5],[6,7,8],[0,4,8],[6,4,2]];
+const images = [
+    "http://cliparthouse.ru/wp-content/uploads/fruit/54-fruit-lemons-2.jpg",
+    "http://cliparthouse.ru/wp-content/uploads/fruit/64-fruit-pineapple-1.jpg",
+    "http://cliparthouse.ru/wp-content/uploads/fruit/79-fruit-strawberry-4.jpg"
 ];
+const numCount = images.length-1;
 document.getElementById("balance").innerText = balance;
+
 function randomNumbers(count) {
     let result = [];
     for(let i=0;i<9;i++){
@@ -14,36 +18,48 @@ function randomNumbers(count) {
     return(result);
 }
 
-function checkWins(winCombs,table) {
-    let wins =0;
-    for (let i=0; i < winCombs.length;i++){
-        if ((table[winCombs[i,0]]===table[winCombs[i,1]]) && (table[winCombs[i,0]]===table[winCombs[i,2]])){
-            wins++;
+function checkWins(table) {
+    let combo =0;
+    for (let i=0; i < winCombs.length-1; i++){
+        if ( (table[winCombs[i][0]]===table[winCombs[i][1]]) && (table[winCombs[i][1]]===table[winCombs[i][2]]) ){
+            combo++;
         }
-    return(wins);
     }
+    return combo;
 }
 
-function writeTable(numbers){
-    numbers.forEach(function(element,index){
-        let name = "slot"+(index+1);
-        let slot = document.getElementById(name);
-        slot.innerText = element;
+function output(numbers){
+    numbers.forEach(function(number,index){
+        let id = "slot"+(index+1);
+        let slot = document.getElementById(id);
+        if(slot.innerHTML){
+        slot.innerHTML = "";
+        }
+        let slotImage = document.createElement("img");
+        slotImage.src = images[number];
+        slotImage.alt = "image";
+        slotImage.className = "imageInSlot";
+        slot.appendChild(slotImage);
     });
+    printBalance();
+}
+
+function printBalance() {
     document.getElementById("balance").innerText = balance;
 }
 
 function startGame(){
     if(balance > 9){
         balance -= 10;
-        let numbers = randomNumbers(5);
-        writeTable(numbers);
-        let wins = checkWins(winCombs,numbers);
-        if(wins){
-            balance+=10*(wins+1);
-            document.getElementById("balance").innerText = balance;
+        let numbers = randomNumbers(numCount);
+        output(numbers);
+        let combo = checkWins(numbers);
+        if(combo){
+            balance+=30*combo;
+            printBalance();
         }
         
+    } else {
+        alert("У вас слишком мало денег!");
     }
-    else{alert("У вас слишком мало денег!")}
 }
