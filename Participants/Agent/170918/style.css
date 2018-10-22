@@ -13,6 +13,7 @@
     cursor: pointer;
 }
 .img-small {
+    transition: margin 0.25s;
     height: 130px;
 }
 
@@ -38,5 +39,5 @@
     padding: 10px;
     margin: auto;
     height: 130px;
-    width: 1000px;
+    width: 20000px;
 }
