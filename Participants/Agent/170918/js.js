@@ -47,12 +47,18 @@ function createScroll(element){
     element.appendChild(block);
     return(block);
 }
+/*function setScrollWidth(scroll) {
+    let width = 0;
+    scroll.forEach(element => width += element.width);
+    return(width);
+}*/
 function init() {
     addBigImageToElement(slider_element);
     const scroll = createScroll(slider_element);
     img_array.forEach(function(imgObj){
         addSmallImageToElement(imgObj, scroll);
     });
+    /*scroll.width = setScrollWidth(scroll)+"px";*/
 }
 function nextImg() {
     const image = document.getElementById("img-big");
@@ -78,12 +84,13 @@ function prevImg() {
 }
 let position = 0;
 function scrolling(move) {
-    let test = position + move;
     const scroll = document.getElementById("scroll");
     const imgCoount = scroll.childElementCount;
     const ScrollFirstChild = scroll.firstChild;
     const width = ScrollFirstChild.width;
-    if(test <= 0 & test > -((imgCoount-1) * width)){
+    let test = position + move;
+
+    if(test <= 0 & test > -((imgCoount-2) * width)){
     position += move;
     ScrollFirstChild.style.marginLeft =position +"px";
     }
