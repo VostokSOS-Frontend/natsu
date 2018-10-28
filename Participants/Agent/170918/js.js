@@ -95,5 +95,4 @@ function scrolling(move) {
     ScrollFirstChild.style.marginLeft =position +"px";
     }
 }
-
 init();

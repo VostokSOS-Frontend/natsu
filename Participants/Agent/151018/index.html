@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slot Machine</title>
+</head>
+<body>
+    <div class="main">
+        <div class="slots">
+            <table class="slotmachine" border="1">
+                <tr>
+                    <th class="slot" id="slot1"></th>
+                    <th class="slot" id="slot2"></th>
+                    <th class="slot" id="slot3"></th>
+                </tr>
+                <tr>
+                    <th class="slot" id="slot4"></th>
+                    <th class="slot" id="slot5"></th>
+                    <th class="slot" id="slot6"></th>
+                </tr>
+                <tr>
+                    <th class="slot" id="slot7"></th>
+                    <th class="slot" id="slot8"></th>
+                    <th class="slot" id="slot9"></th>
+                </tr>
+            </table>
+        </div>
+        <button id="button_start" onclick="startGame()" type="button">Start</button>
+        <span id="balance">999</span>
+    </div>
+<script src="./js.js"></script>
+</body>
+</html>
