@@ -14,12 +14,14 @@ function randomNumbers(count) {
     return result;}
 function checkWins(table) {
     let combo =0;
-    for (let i=0; i < winCombs.length-1; i++){
+    for (let i=0; i < winCombs.length; i++){
         if ( (table[winCombs[i][0]]===table[winCombs[i][1]]) && (table[winCombs[i][1]]===table[winCombs[i][2]]) ){
             combo++;
+            /*
             createLine(i);
+            */
         }}
-    return combo;}
+    return combo;}/*
 function createDiv(position,angle) {
     let line = document.createElement("div");
     line.className = "line";
@@ -29,6 +31,7 @@ function createDiv(position,angle) {
     let table = document.getElementById("slotmachine");
     table.insertBefore(line);
 }
+
 function crateline(index) {
     switch(index){
         case "1": createDiv(1,0);
@@ -42,7 +45,7 @@ function crateline(index) {
         case "5": createDiv(2,-45);
         break;
     }
-}
+}*/
 function output(numbers){
     numbers.forEach(function(number,index){
         let id = "slot"+(index+1);
