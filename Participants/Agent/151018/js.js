@@ -68,7 +68,6 @@ function startGame(){
             balance+=20*combo;
             printBalance();
         }
-        
     } else {
         alert("У вас слишком мало денег!");
     }
