@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.target {
+    border-radius: 50%;
+    background-color: tomato;
+    position: fixed;
+    z-index: 100;
+}
+
+.hidden {
+    display: none;
+}
