@@ -3,20 +3,16 @@
 const imgArray = [
     {
         src: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Aedes_aegypti_biting_human.jpg/1200px-Aedes_aegypti_biting_human.jpg',
-        title: 'Комар-1'
+        title: 'Комар 1.0'
     },
     {
-        src: 'http://www.nat-geo.ru/upload/iblock/c82/c82cdedee6b619be7edba6b943620e3b.jpg',
-        title: 'Комар-2'
+        src: 'https://klop03.com/wp-content/uploads/2016/11/Komar_1_13145230.jpg',
+        title: 'Комар v2.0'
     },
     {
         src: 'https://tv.ua/img/article/1040/14_main.jpg',
-        title: 'Комар-3',
+        title: 'Комар v3.0',
     },
-    {
-        src: 'https://i0.wp.com/kumushka.com/wp-content/uploads/2009/05/komar.jpg?w=800&ssl=1',
-        title: 'Комар-4'
-    }
 ];
 const sliderElement = document.getElementById('img-slider');
 
@@ -40,8 +36,23 @@ function addBigImageToElement(element) {
     bigImage.alt = imgArray[0].title;
     bigImage.className = 'img-big';
     bigImage.id = 'img-big';
+    bigImage.onclick = ShowPopupImage;
     element.appendChild(bigImage);
 }
+
+function ShowPopupImage () {
+    popup = document.createElement('div');
+    popup.className = 'popup-wrapper';
+    popup.onclick = HidePopup;
+    const popupImg = bigImage.cloneNode(true);
+    popup.appendChild(popupImg);
+    document.body.appendChild(popup);
+}
+
+function HidePopup () {
+    document.body.removeChild(popup);
+}
+
 
 function addTitleToElement(element) {
     const titleElement = document.createElement('h2');
@@ -61,3 +72,4 @@ function init() {
 }
 
 init();
+
