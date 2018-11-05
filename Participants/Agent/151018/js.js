@@ -14,34 +14,18 @@ function randomNumbers(count) {
     return result;}
 function checkWins(table) {
     let combo =0;
-    for (let i=0; i < winCombs.length-1; i++){
+    for (let i=0; i < winCombs.length; i++){
         if ( (table[winCombs[i][0]]===table[winCombs[i][1]]) && (table[winCombs[i][1]]===table[winCombs[i][2]]) ){
             combo++;
-            createLine(i);
+            showwinline(i);
         }}
-    return combo;}
-function createDiv(position,angle) {
-    let line = document.createElement("div");
-    line.className = "line";
-    line.id = "line";
-    line.style.top = position * 100 +"px";
-    line.style.transform = "rotate("+angle+")";
-    let table = document.getElementById("slotmachine");
-    table.insertBefore(line);
+    return combo;
 }
-function crateline(index) {
-    switch(index){
-        case "1": createDiv(1,0);
-        break;
-        case "2": createDiv(2,0);
-        break;
-        case "3": createDiv(3,0);
-        break;
-        case "4": createDiv(2,45);
-        break;
-        case "5": createDiv(2,-45);
-        break;
-    }
+function showwinline(number){
+    let line = document.getElementsByClassName("winline")[number];
+    let className = line.className;
+    className = className.slice(0,-5);
+    line.className = className;
 }
 function output(numbers){
     numbers.forEach(function(number,index){
@@ -61,7 +45,20 @@ function output(numbers){
 function printBalance() {
     document.getElementById("balance").innerText = balance;
 }
+function hidelines() {
+    let lines = document.getElementsByClassName("winline");
+    let className = "";
+    let line;
+    for (let i=0; i < lines.length;i++){
+        line = lines[i];
+        className = line.className;
+        if(className.slice(-4) != "hide"){
+        line.className = className + " hide";
+        }
+    };
+}
 function startGame(){
+    hidelines();
     if(balance > 9){
         balance -= 10;
         let numbers = randomNumbers(numCount);
