@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+    <link rel="stylesheet" href="./css.css">
+</head>
+<body>
+    <script src="./script.js"></script>
+    <div class="container_main">
+        <form>
+            <span>
+                <input class="text_input" type="text" id="text"><input onclick="writeList(),clearText()" type="button" value="Добавить">
+                <button type="button" class="save__btn" onClick="saveList()">Сохранить</button>
+                <button type="button" onClick="clearList()" class="clear__btn">Удалить</button>
+                <!--<select id="select-save-name" style="width: 100px; margin-left: 20px;">
+                    <option onClick="setName('First')">First</option>
+                    <option onClick="setName('Second')">Second</option>
+                    <option onClick="setName('Third')">Third</option>
+                    <option onClick="setName('Forth')">Forth</option>
+                    <option onClick="setName('List')">Old</option>
+                </select>-->
+                <button type="button" onClick="refresh()" class="refresh__btn" title="Обновить"><img class="refresh__btn_img" src="https://www.kuchadrov.ru/uploads/posts/2011-11/1321276683_update.png"></button> 
+            </span>
+        </form>
+        <div class="container_second">
+        <div id="list"></div>
+        </div>
+    </div>
+    <div class="container_load">
+        <div>
+            <div class="cont__load_text">Выберите сохранение</div>
+            <div class="cont__load_contein">
+            <ul class="cont__load_list">
+                <li>test</li>
+            </div>
+            <div class="cont__load_text cont__load_btn_create">
+                <div class="load_btn_create">Создать сохранение</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

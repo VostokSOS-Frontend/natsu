@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container_main {
+    width: 70%;
+    margin: 100px auto auto 50px;
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    border-color: #BBB;
+    background-color: #EEE;
+    min-width: 1200px;
+}
+.container_second {
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #000, 4px 4px 9px #000;
+    background:#E5E5E5;
+    display: block;
+    overflow: auto;
+    max-height: 600px;
+    word-wrap: break-word;
+}
+.container_load {
+    margin: 100px auto auto 50px;
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    border-color: #BBB;
+    background-color: #EEE;
+    height: 600px;
+    width: 20%;
+    min-width: 300px;
+}
+.cont__load_text {
+    margin: 25px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 25px
+}
+.cont__load_list {
+    list-style: none;
+    font-size: 20px;
+    word-wrap: break-word;
+}
+.cont__load_contein{
+    height: 440px;
+    overflow-y: scroll;
+}
+.cont__load_list li {
+    margin: 0 30px;
+    text-align: center;
+    cursor: pointer;
+    background: #DDD;
+    transition: 0.3s;
+}
+.cont__load_list li:first-child {
+    border-radius: 10px 10px 0 0;
+}
+.cont__load_list li:hover {
+    color: #2B2;
+    text-shadow: 0 0 3px #FFF;
+}
+.cont__load_list li:hover::after {
+    background: #ADA;
+}
+.cont__load_list li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #EEE ;
+    box-shadow: 0 0 3px #000;
+    transition: 0.3s;
+}
+cont__load_btn_create {
+    display: inline-block;
+    position: relative;
+    vertical-align: bottom;
+}
+.text_input {
+    margin:20px; 
+    width: 70%;
+}
+.save__btn {
+    margin-left: 20px;
+}
+.clear__btn {
+    margin-left: 5px;
+}
+.refresh__btn {
+    margin: 0;
+    padding: 0;
+    line-height: 10px;
+    position: relative;
+    top: 5px;
+}
+.refresh__btn_img {
+    width: 24px;
+    height: 24px;
+}
+.item__load {
+    margin: 4px;
+    padding-right: 25px;
+}
+.item__load_btn_remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgb(151, 151, 151);
+    font-size: 18px;
+    width: 23px;
+    height: 23px;
+    border-radius: 18px;
+    line-height: 23px;
+    text-align: center;
+    transition: 0.3s;
+    position: absolute;
+    right: 25px;
+}
+.item__load_btn_remove:hover {
+    transform: scale(1.1);
+    background: #EAEAEA;
+}
+.load_btn_create {
+    border-radius: 10px;
+    box-shadow: 0 0 5px #000, 1px 3px 5px #000;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.load_btn_create:hover {
+    background: #FEFEFE;
+}
+.load_btn_create:active {
+    transform: scale(0.99);
+}
