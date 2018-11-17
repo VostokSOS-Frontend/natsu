@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css.css">
 </head>
 <body>
+    <div id="message" class="message"></div>
     <script src="./script.js"></script>
     <div class="container_main">
         <form>
@@ -35,17 +36,17 @@
                 <li>test</li>
             </div>
             <div class="cont__load_text cont__load_btn_create">
-                <div class="load_btn_create" onclick="createNewSave()">Создать сохранение</div>
+                <div class="load_btn_create" onclick="openCreateSave()">Создать сохранение</div>
             </div>
         </div>
     </div>
-    <div class="container_createSave">
+    <div id="createSave" class="container_createSave hidden">
         <div class="cont__save_menu">
-            <div class="cont__save_text1">Введите название сохранения</div>
+            <div class="cont__save_text1">Введите название сохранения</div><div onclick="closeCreateSave()" class="cont__save_close">&times;</div>
             <form>
-
+                <input id="SaveNameIn" class="cont__textareaCreateSave" type="text" placeholder="Название..." minlength="4" maxlength="34" required>
             </form>
-            <div class="cont__bnt_createSave"><span class="cont__btn_text">OK</span></div>
+            <div class="cont__bnt_createSave" onclick="createNewSave()"><span class="cont__btn_text">OK</span></div>
         </div>
     </div>
 </body>
