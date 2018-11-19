@@ -21,8 +21,8 @@ let List=[];
 
 function readList()
 {
-    let htmlOut = "<ol style=\"margin: 5px; padding-left: 40px;\";>";
-    List.forEach(function(element,index){htmlOut += "<li style=\"margin: 4px;\">" + element + "<button onclick=\"removeList("+index+")\">X</button>"+"</li><hr style=\"margin: 0;\">";});
+    let htmlOut = "<ol style=\"padding-left: 40px;\">";
+    List.forEach(function(element,index){htmlOut += "<li class=\"item__load\">" + element + "<button class=\"item__load_btn_remove\" onclick=\"removeList("+index+")\">&#10008</button>"+"</li><hr>";});
     htmlOut += "</ol>";
     document.getElementById("list").innerHTML=htmlOut;
 }
@@ -47,13 +47,13 @@ function saveList()
 {
     let ListJoin = List.join("§");
     localStorage.setItem(Name,ListJoin);
-    alert("Сохранено!");
+    showMessage("Сохранено!");
 }
 function clearList()
 {
     if (confirm("Удалить сохранение ?")){
     localStorage.removeItem(Name);
-    alert("Удалено!");
+    showMessage("Удалено!");
     }
 }
 function loadList(atr)
@@ -61,12 +61,12 @@ function loadList(atr)
     let chars = localStorage.getItem(Name);
     if( !chars){
         List = [];
-        alert("Сохранения нет.");
+        showMessage("Сохранений нет");
     }
     else {
     List = chars.split("§");
     if(!atr){
-    alert("Сохранение загружено!");
+    showMessage("Сохранение загружено!");
     }
     readList();
     }
@@ -78,4 +78,30 @@ function refresh() {
 function setName(name) {
     Name = name;
     refresh();
+}
+function closeCreateSave() {
+    let menu = document.getElementById("createSave");
+    menu.classList.add("hidden");
+    document.getElementById("SaveNameIn").value = "";
+}
+function openCreateSave() {
+    let menu = document.getElementById("createSave");
+    menu.classList.remove("hidden");
+}
+function createNewSave() {
+    let name = document.getElementById("SaveNameIn").value;
+    if (name >= 4){
+    closeCreateSave();
+    if(true){
+    showMessage("Сохранение создано!");
+    }
+    else if (false) {}
+    }
+    else { showMessage("Введите имя минимум из 4 символов!") }
+}
+function showMessage(message){
+    let element = document.getElementById("message");
+    element.innerText = message;
+    element.classList.add("showMessage");
+    setTimeout(() => element.classList.remove("showMessage"),2000);
 }
