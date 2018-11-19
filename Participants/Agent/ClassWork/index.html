@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css.css">
+    <script src="js.js"></script>
+</head>
+<body>
+    <div class="block__weather">
+        <span>Weather at <b id="city_name"></b></span><br>
+        <span>Clouds : <b id="clouds"></b></span><br>
+        <span>Wind speed: <b id="wind_speed"></b></span><br>
+        <span>Degree: <b id="degree"></b></span><br>
+        <div class="city">
+            <form>
+            <input id="home" type="text" class="city__input" placeholder="Home...">
+            <div class="city__btn" onclick="sendRequest()">Find</div>
+            <div class="city__btn" onclick="sendRequest()">Get geolocation</div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

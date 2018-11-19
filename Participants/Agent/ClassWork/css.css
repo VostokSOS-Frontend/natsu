@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.block__weather {
+    position: absolute;
+    width: 250px;
+    padding: 30px 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background: #EEE;
+    border-radius: 30px;
+}
+.block__weather * {
+    margin-top: 45px;
+}
+.city__btn {
+    position: relative;
+    left: 50%;
+    width: 70%;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px;
+    border-radius: 10px;
+    background: #BBB;
+    box-shadow: 0 0 5px #CCC;
+    transform: translate(-50%,0);
+    transition: 0.3s;
+}
+.city__btn:hover {
+    cursor: pointer;
+}

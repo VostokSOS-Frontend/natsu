@@ -30,31 +30,21 @@ function move(e,ban){                               // обработка дви
 }
 function checkPosition(e) {                         // проверка позиционирования
     ban = [0,0,0,0];
-    for (let i = 0; i < blocks.length;) {
-        let XWidth        
-        let YHeight
-        let Xleft
-        let Ytop
         if (left == 620 & TOP+50 > 300 & TOP < 600){ban[0]=1}
         if (left+50 > 600 & left < 620 & TOP == 600){ban[1]=1}
         if (left+50 == 600 & TOP+50 > 300 & TOP < 600){ban[2]=1}
         if (TOP+40 == 290 & left+50 > 600 & left < 620){ban[3]=1}
-    }
     move(e,ban);
 }
-/*
 function displayBlocks() {
-    for(let i = 0; i < blocks.length;){
         let block = document.createElement("div");
         block.classList.add("block");
-        block.style.left = blocks[i][0] + "px";
-        block.style.top = blocks[i][1] + "px";
-        block.style.width = blocks[i][2] + "px";
-        block.style.height = blocks[i][3] + "px";
+        block.style.left = blocks[0][0] + "px";
+        block.style.top = blocks[0][1] + "px";
+        block.style.width = blocks[0][2] + "px";
+        block.style.height = blocks[0][3] + "px";
         arena.appendChild(block);
-    }
 }
-*/
 let left = 10;                                         // отступ слева
 let TOP = 10;                                          // отступ справа
 let ban = [0,0,0,0];                                  // запрещённые направления 1 - запрещено, 0 - разрешено [влево, вверх, вправо, вниз]
@@ -63,3 +53,4 @@ const arena = document.getElementById("arena");
 let blocks = [[600,300,20,300],[300,100,200,20]];     // [left,top,width,height]
 document.addEventListener("keydown",checkPosition);
 displayBlocks();
+console.log(blocks[1][0]);
