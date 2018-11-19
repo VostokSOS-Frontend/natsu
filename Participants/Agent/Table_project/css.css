@@ -107,7 +107,7 @@
     transition: 0.3s;
 }
 .cont__save_close:hover {
-    transform: scale(0.95);
+    transform: scale(1.05);
 }
 .cont__save_close:active {
     transform: scale(0.9);
