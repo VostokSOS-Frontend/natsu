@@ -6,7 +6,7 @@
 }
 
 .img:active {
-    clip: auto;
+    clip: 100%;
     z-index: 10;
 }
 
