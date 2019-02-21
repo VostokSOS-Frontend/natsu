@@ -39,7 +39,8 @@ function Roll()
         document.write("<p>Вы поставили на: "+Rate+" грань</p> <ul>");
         for (let i = 0; i < 3; i++)
         {
-            let num = Math.round(Math.random()*5)+1;
+            let num = Math.round(Math.random()*6);
+            console.log(num);
             document.write("<li>выпало: "+num+"</li>");
            if(num == Rate){
                win++;
