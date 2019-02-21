@@ -40,6 +40,7 @@ function Roll()
         for (let i = 0; i < 3; i++)
         {
             let num = Math.ceil(Math.random()*6);
+            if(num == 0){num = 1};
             console.log(num);
             document.write("<li>выпало: "+num+"</li>");
            if(num == Rate){
